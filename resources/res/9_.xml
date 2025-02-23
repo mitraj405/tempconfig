@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dp_25" android:weightSum="2">
+        <TextView android:textAppearance="?attr/textAppearanceListItem" android:textSize="14dp" android:gravity="center" android:id="@+id/journey_date" android:layout_width="0dp" android:layout_height="match_parent" android:text="Journey Date" android:layout_weight="1"/>
+        <TextView android:textAppearance="?attr/textAppearanceListItem" android:textSize="14dp" android:gravity="center" android:id="@+id/booking_status" android:layout_width="0dp" android:layout_height="match_parent" android:text="Booking Status" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:background="#ddd" android:layout_width="match_parent" android:layout_height="2dp">
+        <TextView android:background="#ddd" android:layout_width="match_parent" android:layout_height="10dp" android:text=""/>
+    </LinearLayout>
+</LinearLayout>

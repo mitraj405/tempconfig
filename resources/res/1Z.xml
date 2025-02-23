@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_root" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/size15" android:textStyle="bold" android:textColor="@color/black_80_opa" android:gravity="center" android:id="@+id/input_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center"/>
+    <EditText android:gravity="center" android:id="@+id/et_input" android:layout_width="match_parent" android:layout_height="50dp" android:maxLength="10" android:digits="0123456789" android:inputType="number">
+        <requestFocus/>
+    </EditText>
+</LinearLayout>

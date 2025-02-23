@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/header" android:background="@drawable/btn_gradient" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView android:paddingLeft="15dp" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/irctc_logo_white_bg" android:layout_centerVertical="true"/>
+        <ImageView android:background="@drawable/bg_cris_logo" android:padding="4dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="5dp" android:src="@drawable/cris_logo_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

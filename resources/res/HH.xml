@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/one" android:title="@string/Current_Status"/>
+    <item android:id="@+id/cancel" android:title="@string/cncel_Ticket"/>
+    <item android:id="@+id/change" android:title="@string/changeBoardingPoint"/>
+    <item android:id="@+id/opt" android:title="@string/opt_vikalp"/>
+    <item android:id="@+id/rebook" android:title="@string/rebook_ticket"/>
+    <item android:id="@+id/add_meal" android:title="@string/book_Meal"/>
+</menu>

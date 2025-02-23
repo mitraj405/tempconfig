@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" ads:cardBackgroundColor="@color/white">
+    <LinearLayout android:orientation="vertical" android:padding="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatimaan exp" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="14dp" android:textColor="@color/colorAccent" android:id="@+id/train_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="(12050)" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/pnr" android:layout_toLeftOf="@+id/pnr" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="13dp" android:textColor="@color/red" android:id="@+id/pnr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="10001675905" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/journey_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            <LinearLayout android:id="@+id/tv_pnradd" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:enabled="false" android:layout_gravity="center" android:id="@+id/tv_favpnricon" android:paddingLeft="10dp" android:paddingRight="10dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="20dp" android:src="@mipmap/ic_fav_icon1"/>
+            </LinearLayout>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/dest_arr_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/journey_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/travel_time2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:layout_gravity="center" android:background="@color/lightdark" android:layout_width="20dp" android:layout_height="1dp" android:layout_marginRight="4dp"/>
+                <TextView android:textSize="10dp" android:textColor="@color/lightdark" android:id="@+id/travel_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                <View android:background="@color/lightdark" android:layout_width="20dp" android:layout_height="1dp" android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+            <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/dest_arr_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/fromcidtycode" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="H Nizamuddin (NZM)" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tocitycode" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gwalior (GWL)" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="10dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/tkt_details" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

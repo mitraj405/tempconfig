@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@+id/tkt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:layout_below="@+id/header">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/train_details" android:background="@android:color/white" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="110dp" android:layout_alignParentTop="true">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_90_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PNR No:" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/pnr" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12543" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <TextView android:textSize="14dp" android:textColor="@android:color/black" android:id="@+id/train_name_no" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_toLeftOf="@+id/tv_class">
+                        <TextView android:textSize="14dp" android:textColor="@android:color/black" android:id="@+id/fromcidtycode" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A" android:drawableRight="@drawable/ic_right_arrow" android:drawablePadding="10dp" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="14dp" android:textColor="@android:color/black" android:id="@+id/tocitycode" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="14dp" android:textColor="@android:color/black" android:id="@+id/tv_arr_dep_time" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/booking_date_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Journey Date:" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="12dp" android:textColor="@android:color/black" android:id="@+id/journey_date" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02 Jan 2016" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ll_vikalp__train_date" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/train_details">
+                    <TextView android:textColor="@color/black_90_opa" android:id="@+id/vikalp_train_date" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="DD/MM/YYYY" android:drawableRight="@drawable/ic_down_arrow_black"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/ll_select_vikalp_trn" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_vikalp__train_date">
+                    <TextView android:textColor="@color/black_90_opa" android:id="@+id/tv_select_trn_txt" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Select maximum of 5 trains"/>
+                </LinearLayout>
+                <androidx.core.widget.NestedScrollView android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/main_layout">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_train_list" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll_select_vikalp_trn">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_train_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/select_vikalp_train_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_below="@+id/rv_train_list" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/select_vikalp_train_bottom"/>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+                <View android:background="@color/darkGrey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_select_spl" android:paddingBottom="@dimen/dimen_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="75dp" android:layout_below="@+id/ll_train_list">
+                    <CheckBox android:textSize="12dp" android:gravity="top" android:layout_gravity="top" android:id="@+id/select_spl_train" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:checked="true" android:button="@drawable/irctc_checkbox"/>
+                    <TextView android:textSize="4dp" android:textColor="@color/dark" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="OPT VIKALP in special train. Accomodation may be provided in the special train if available and departing between 30 min to 72 hours from scheduled departure of passengers oringinal train."/>
+                </LinearLayout>
+                <LinearLayout android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/ll_btn" android:background="@color/bottom_dark" android:padding="7dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_select_spl" android:layout_alignParentBottom="true">
+                    <TextView android:textSize="12dp" android:textColor="@android:color/white" android:id="@+id/tv_submit_btn" android:background="@drawable/round_red_fill" android:paddingLeft="17dp" android:paddingTop="8dp" android:paddingRight="17dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Opt Vikalp" android:layout_below="@+id/ll_select_spl" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

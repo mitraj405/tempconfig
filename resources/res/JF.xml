@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout3" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_pan_layout" android:background="@color/white_90_opa" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:id="@+id/il_txn_pw" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_txn_pw" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                        <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/txn_pw" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLength="10" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890" android:inputType="textCapCharacters" android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                        <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_cnf_txn_pw" android:background="@color/white_90_opa" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:id="@+id/il_cnf_txn_pw" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_txn_pw" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                        <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/cnf_txn_pw" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLength="255" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz " android:inputType="textCapCharacters" android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                        <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_uid_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="center" android:id="@+id/ll_submit" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="22dp" android:textColor="@color/PrimaryColor" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/white_btn_state" android:visibility="visible" android:layout_width="260dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/submit" fontFamily="fonts/Roboto-Medium.ttf"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

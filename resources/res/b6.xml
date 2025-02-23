@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="16dp" android:textColor="@color/black_80_opa" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginTop="15dp" android:layout_marginRight="12dp" android:text="@string/about_us_content"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/cris_logo_for_hindi" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/cris_logo_blue"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:layout_gravity="center_horizontal" android:id="@+id/appVersionText_hindi" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version " android:textAlignment="center"/>
+            <TextView android:textSize="16dp" android:textColor="@color/black_80_opa" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="12dp" android:text="@string/about_us_design"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/cris_logo" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/cris_logo_blue"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:layout_gravity="center_horizontal" android:id="@+id/appVersionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Version " android:textAlignment="center"/>
+            <View android:layout_width="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" style="@style/profile.fields.divider"/>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/about_us_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/lower_bots_aboutus"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

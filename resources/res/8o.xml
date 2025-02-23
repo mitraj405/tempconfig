@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/transaction_id" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <TextView android:textSize="15dp" android:id="@+id/transaction_id" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2.90" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/recharge_status" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <TextView android:textSize="15dp" android:id="@+id/recharge_status" android:layout_width="0dp" android:layout_height="wrap_content" android:text="10000.00" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/deposit_date" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <TextView android:textSize="15dp" android:id="@+id/deposit_date" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2.90" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/amount_deposited" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <TextView android:textSize="15dp" android:id="@+id/amount_deposited" android:layout_width="0dp" android:layout_height="wrap_content" android:text="10000.00" android:layout_weight="1" fontFamily="fonts/Roboto-Regular.ttf"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_uid_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center" android:id="@+id/ll_submit" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="22dp" android:textColor="@color/PrimaryColor" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/white_btn_state" android:visibility="visible" android:layout_width="260dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/OK" fontFamily="fonts/Roboto-Medium.ttf"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

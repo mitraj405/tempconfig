@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/bg_gradient" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="110dp" android:layout_weight="4">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginLeft="30dp" android:src="@drawable/indian_railways_logo" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true"/>
+                    <ImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="30dp" android:src="@drawable/ic_launcher192" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/generate_pin" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="210dp" android:layout_weight="1">
+                    <ImageView android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginRight="1dp" android:src="@drawable/login_bg_one" android:scaleType="fitXY"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <EditText android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center_horizontal" android:id="@+id/et_pin" android:background="@drawable/edittextborder" android:paddingLeft="5dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="7dp" android:layout_marginRight="40dp" android:hint="@string/enter_PIN" android:maxLength="4" android:inputType="numberPassword"/>
+                        <EditText android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center_horizontal" android:id="@+id/et_re_enter_pin" android:background="@drawable/edittextborder" android:paddingLeft="5dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="30dp" android:layout_marginRight="40dp" android:layout_marginBottom="10dp" android:hint="@string/confirm_PIN" android:maxLength="4" android:inputType="numberPassword"/>
+                        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/rl_fingerprint_authentication" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="10dp" android:layout_marginRight="40dp">
+                            <Switch android:gravity="left" android:id="@+id/fingerAuthSwitch" android:layout_width="90dp" android:layout_height="25dp" android:checked="false" android:tint="@color/colorPrimaryDark" android:textOff="No" android:layout_alignParentRight="true"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biometric_authentication" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="275dp" android:layout_marginBottom="2dp" android:layout_weight="1">
+                    <ImageView android:background="@null" android:layout_width="match_parent" android:layout_height="270dp" android:layout_marginLeft="0.8dp" android:src="@drawable/login_bg_two" android:scaleType="fitXY"/>
+                    <RelativeLayout android:gravity="center" android:id="@+id/tv_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="40dp" android:layout_alignParentRight="true">
+                        <ImageView android:id="@+id/submit" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/circle_bg"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit" android:layout_centerInParent="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="16dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginBottom="15dp" android:text="@string/more_apps_IRCTC" android:layout_above="@+id/more_app" android:fontFamily="@font/open_sans_semibold"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/more_app" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_marginRight="7dp" android:layout_alignParentBottom="true">
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_air_ticket" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/air_ticket"/>
+                                <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/airticket" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_bus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/bushdhome"/>
+                                <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/bus" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_hotel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/hotelhdhome"/>
+                                <TextView android:textSize="10dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/hotel" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="7dp">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_book_meal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/book_meal_login"/>
+                                <TextView android:textSize="9dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Order_Food" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_irctc_tourism" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                                <ImageView android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/tourism_login"/>
+                                <TextView android:textSize="9dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/irct_tourism" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_uts_ticket" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+                                <ImageView android:background="#fff" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/utc_ticket"/>
+                                <TextView android:textSize="9dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/uts_ticket" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:layout_gravity="right" android:id="@+id/tv_user_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="35dp" android:layout_marginBottom="@dimen/dimen_50" android:text="@string/user_guide" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/pingeneration_bottom_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" ads:adSize="BANNER" ads:adUnitId="@string/pingeneration_bottom_ads"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

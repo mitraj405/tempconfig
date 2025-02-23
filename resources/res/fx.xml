@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_from_to_header_lap" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/header_fromstn" android:paddingTop="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nbnvbbn" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="-" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/header_tomstn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="nbnvbbn" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/booking_status_ll" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="right" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Status_loyalty" android:layout_toLeftOf="@+id/pnr_no" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/red" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_bookstatus" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bcbvcvcvx" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/header_total_duration" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Duration 11:50" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_tainname_haedind_lap1" android:background="#efeff4" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/radio_button_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="8dp" android:id="@+id/menu_option_lapwise" android:paddingLeft="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="10dp" android:button="@drawable/radiobutton" android:scaleX="2" android:scaleY="2" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/lap1_heading" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lap_1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/selected_train_name" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatiman" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/selected_train_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="12554" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <RelativeLayout android:id="@+id/pnr_detail" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_routmap" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/route_icon" android:tint="@color/dark" android:layout_alignParentRight="true"/>
+                    <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="right" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/pnr" android:layout_toLeftOf="@+id/pnr_no" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/red" android:gravity="right" android:layout_gravity="right" android:id="@+id/pnr_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="10001675905" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/tain_detail_ll" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/tv_dep_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/travel_time_ll" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <View android:layout_gravity="center" android:background="@color/lightdark" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginRight="4dp"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/lightdark" android:id="@+id/travel_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="03h 03m" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                    <View android:background="@color/lightdark" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginLeft="4dp"/>
+                </LinearLayout>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_arv_timee" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_dep_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_arv_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_from_stationname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ndls" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_to_stationname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MMCT" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="15dp" android:textColor="@color/green" android:id="@+id/booking_status" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="jhvggffg" android:layout_toLeftOf="@+id/tv_quota" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_quota" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+            <TextView android:textSize="11dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/psgnCount_Class_Quota" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="2 Adults | AC Chair Car | General | H Nizamuddin" android:fontFamily="@font/open_sans_semibold"/>
+            <TextView android:textSize="13dp" android:textColor="@color/red" android:layout_gravity="center" android:id="@+id/tv_prs_failmsg" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="tickeet not booked" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

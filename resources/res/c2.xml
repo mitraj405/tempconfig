@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bank_grid_parent_rl" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:background="@drawable/custom_edit_text" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp">
+        <CheckBox android:id="@+id/check_bank" android:visibility="visible" android:layout_width="22dp" android:layout_height="22dp" android:button="@drawable/bank_checked" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/img_bank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:src="@drawable/hsbc_logo" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

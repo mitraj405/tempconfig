@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView" android:background="@color/transparent" android:fitsSystemWindows="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/title_bar" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15dp" android:textColor="@color/light_yellow" android:id="@+id/rs_status" android:background="@color/gray_theme" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/aadhaar" fontFamily="fonts/Roboto-Regular.ttf"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout3" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_aadhaar_name" android:background="@color/white_90_opa" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:id="@+id/il_aadhar_name" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                            <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/et_aadhar_name" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/adhaar_name" android:maxLength="255" android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz " android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                            <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_aadhaar_layout" android:background="@color/white_90_opa" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:id="@+id/il_pnr_layout" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/adhaar_number" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                            <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/et_aadhar_number" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLength="255" android:digits="1234567890" android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                            <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/tv_opt_layout" android:background="@color/white_90_opa" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/aadhaar_otp" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                            <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/et_opt" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:maxLength="50" android:digits="1234567890" android:windowSoftInputMode="adjustPan" android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                            <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/tv_uid_display" android:background="@color/white_90_opa" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                        <TextView android:textSize="18dp" android:textColor="@color/activate_text_color" android:gravity="left" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Aadhaar No :" android:layout_weight="3.5" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="18dp" android:textColor="@color/activate_text_color" android:gravity="left" android:id="@+id/tv_uid_number" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="6.5" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/tv_uid_layout" android:background="@color/bg_mobile" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Gender  : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:id="@+id/tv_gender_uid" fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Date Of Birth : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:id="@+id/tv_dob_uid" fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Address  : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:textColor="@color/white" android:id="@+id/tv_address_uid" android:layout_width="match_parent" android:layout_height="wrap_content" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Colony : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:id="@+id/tv_colony_uid" fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="District : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:id="@+id/tv_District_uid" fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="State  : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:id="@+id/tv_state_uid" fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/light_yellow" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Pin Code : " fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                        <TextView android:id="@+id/tv_pin_uid" fontFamily="fonts/Roboto-Regular.ttf" style="@style/profile.text.fields"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_select_kyc" android:background="@color/bg_mobile" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <CheckBox android:id="@+id/select_tandc_kyc" android:paddingLeft="10dp" android:paddingTop="0dp" android:paddingBottom="10dp" android:layout_width="30dp" android:layout_height="56dp" android:button="@color/active_yellow" android:drawableLeft="@drawable/check_orange" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    </LinearLayout>
+                    <TextView android:textSize="12dp" android:textColor="@color/white" android:paddingLeft="10dp" android:paddingTop="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="150dp" android:text="@string/aadhaar_kyc_tandc"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_uid_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center" android:id="@+id/ll_submit" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="22dp" android:textColor="@color/PrimaryColor" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/white_btn_state" android:visibility="visible" android:layout_width="260dp" android:layout_height="45dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/submit" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/bot_ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_submit" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

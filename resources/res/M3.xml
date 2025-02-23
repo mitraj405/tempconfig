@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:paddingLeft="28dp" android:paddingTop="7dp" android:paddingRight="30dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="@color/blue" android:id="@+id/tv_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="@string/list_of_special_train" android:fontFamily="@font/open_sans_semibold"/>
+</LinearLayout>

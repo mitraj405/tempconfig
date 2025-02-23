@@ -1,0 +1,33 @@
+package defpackage;
+
+import in.juspay.hyper.constants.LogCategory;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function2;
+
+/* renamed from: hB  reason: default package and case insensitive filesystem */
+/* compiled from: CoroutineContext.kt */
+public final class C1151hB implements CoroutineContext.b, CoroutineContext.c<C1151hB> {
+    public static final C1151hB a = new C1151hB();
+
+    public final <R> R C(R r, Function2<? super R, ? super CoroutineContext.b, ? extends R> function2) {
+        C1177ig.f(function2, "operation");
+        return function2.invoke(r, this);
+    }
+
+    public final <E extends CoroutineContext.b> E b(CoroutineContext.c<E> cVar) {
+        return CoroutineContext.b.a.a(this, cVar);
+    }
+
+    public final CoroutineContext j(CoroutineContext coroutineContext) {
+        C1177ig.f(coroutineContext, LogCategory.CONTEXT);
+        return CoroutineContext.a.a(this, coroutineContext);
+    }
+
+    public final CoroutineContext l(CoroutineContext.c<?> cVar) {
+        return CoroutineContext.b.a.b(this, cVar);
+    }
+
+    public final CoroutineContext.c<?> Z() {
+        return this;
+    }
+}

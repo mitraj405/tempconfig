@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/footer_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/home_11" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/home_image" android:layout_width="wrap_content" android:layout_height="20dp" android:src="@drawable/footer_home1"/>
+            <TextView android:textSize="11dp" android:textColor="@color/red" android:id="@+id/home_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/home" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/myaccount_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/my_account_image" android:layout_width="16dp" android:layout_height="20dp" android:src="@drawable/footer_account" android:tint="@color/colorAccent"/>
+            <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/my_account_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/account" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/amazon_shopping_cart_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.1">
+            <ImageView android:layout_width="16dp" android:layout_height="20dp" android:src="@drawable/amazon_shopping_cart"/>
+            <TextView android:textSize="10dp" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="14dp" android:layout_marginTop="2dp" android:text="@string/shop" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/transaction_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/transaction_imaqe" android:layout_width="16dp" android:layout_height="20dp" android:src="@drawable/mytransaction" android:tint="@color/colorAccent"/>
+            <TextView android:textSize="9dp" android:textColor="@color/colorAccent" android:id="@+id/transaction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/transactions" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/more_drawer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/more_image" android:layout_width="16dp" android:layout_height="20dp" android:src="@drawable/footer_more" android:tint="@color/colorAccent"/>
+            <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/more_footer" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.concurrent.ScheduledExecutorService;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+public final class zzego implements zzhfc {
+    private final zzhfu zza;
+    private final zzhfu zzb;
+    private final zzhfu zzc;
+    private final zzhfu zzd;
+    private final zzhfu zze;
+
+    public zzego(zzhfu zzhfu, zzhfu zzhfu2, zzhfu zzhfu3, zzhfu zzhfu4, zzhfu zzhfu5, zzhfu zzhfu6) {
+        this.zza = zzhfu;
+        this.zzb = zzhfu2;
+        this.zzc = zzhfu3;
+        this.zzd = zzhfu4;
+        this.zze = zzhfu6;
+    }
+
+    /* renamed from: zza */
+    public final zzegn zzb() {
+        zzgcu zzgcu = zzbzo.zza;
+        zzhfk.zzb(zzgcu);
+        return new zzegn((zzcql) this.zza.zzb(), ((zzefv) this.zzb).zzb(), (zzcws) this.zzc.zzb(), (ScheduledExecutorService) this.zzd.zzb(), zzgcu, (zzdsf) this.zze.zzb());
+    }
+}

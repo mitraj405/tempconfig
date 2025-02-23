@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_alerts" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/bell"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Alerts" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_aarogya_setu" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_spinner_aarogya_setu" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/aarogya_setu"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Download_Aarogya_Setu" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_aarogya_setu_expand" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="15dp" android:text="@string/mandatory_down_Aarogya_Setu_app" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/blue" android:id="@+id/tv_download_aarogya_setu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="15dp" android:text="@string/click_here_to_down_aarogya_setu" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_book_meal" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="17dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/drawer_book_meal" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Order_Cancel_Food" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_system_vikalp_opt" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/vikalp_system_ticket1" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Vikalp_System_Ticket" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_cancelcounter_ticket" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/tdr_history" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/cancel_counter" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_deals_on_irctc" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/deals_on_irctc"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Deals_IRCTC" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_gallery" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_logo_galleryvideo"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Gallery" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_about_us" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/about_us" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/About_us" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_contact_us" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/contactus" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/contact_us" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_help_support" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:textColor="@color/dark" android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/pen_1"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/help_support" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_feedback" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/feedback" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/feedback" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_rate_us" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/rateus" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Rate_us" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_fingerprint_authentication" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Switch android:gravity="left" android:id="@+id/fingerAuthSwitch" android:layout_width="90dp" android:layout_height="25dp" android:checked="false" android:tint="@color/colorPrimaryDark" android:textOff="No" android:layout_alignParentRight="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/fingerprint_icon" ads:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/biometric_authentication" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_faqs" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/faq"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="FAQs" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_fundamental_duties" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/tdr_history"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Fundamental Duties" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_user_guide" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/user_guide2" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/user_guide" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_integrityPledge" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/tdr_history"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/pledge_txt_panel" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/tv_langauge" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/language2" android:tint="@color/dark"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/langauge" android:fontFamily="@font/open_sans_semibold"/>
+                    <View android:layout_gravity="center_vertical" android:id="@+id/top_view" android:background="@color/lightgreytxt" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:layout_toRightOf="@+id/sort_by_txt"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:id="@+id/langauge" android:layout_width="90dp" android:layout_height="wrap_content" android:text="@string/select_language" android:layout_toRightOf="@+id/top_view" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="10dp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/medical_message" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/langauge_layout" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:background="@drawable/below_popup_white_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="16sp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="@string/choose_langauge" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                <TextView android:textSize="11sp" android:id="@+id/hindi" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/hindi" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/dark"/>
+                <TextView android:textSize="11sp" android:textColor="@android:color/black" android:id="@+id/english" android:background="@color/white" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="English" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/dark"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/pnr_input_bottom_rl" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:background="@drawable/below_popup_white_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/pnr_input_ll" android:background="@drawable/below_popup_white_bg" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Connecting Journey" android:fontFamily="@font/open_sans_semibold" android:textAlignment="center"/>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                <GridLayout android:layout_width="match_parent" android:layout_height="100dp" android:rowCount="2" android:columnCount="2">
+                    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="10dp" android:layout_rowWeight="1" android:layout_columnWeight="1" ads:cardCornerRadius="4dp" ads:cardElevation="4dp">
+                        <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/imudra2"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="10dp" android:layout_rowWeight="1" android:layout_columnWeight="1" ads:cardElevation="4dp">
+                        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/imudra2"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="10dp" android:layout_rowWeight="1" android:layout_columnWeight="1" ads:cardElevation="4dp">
+                        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/imudra2"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="10dp" android:layout_rowWeight="1" android:layout_columnWeight="1" ads:cardElevation="4dp">
+                        <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/imudra2"/>
+                    </androidx.cardview.widget.CardView>
+                </GridLayout>
+                <LinearLayout android:gravity="center" android:id="@+id/ll_submit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                    <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_submit_btn" android:background="@drawable/round_red_fill" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_120" android:layout_marginRight="@dimen/dp_120" android:text="@string/submit" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

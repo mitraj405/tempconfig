@@ -1,0 +1,24 @@
+package org.spongycastle.jce.spec;
+
+import java.security.spec.KeySpec;
+import org.spongycastle.jce.interfaces.MQVPublicKey;
+
+public class MQVPublicKeySpec implements KeySpec, MQVPublicKey {
+    public final String getAlgorithm() {
+        return "ECMQV";
+    }
+
+    public final byte[] getEncoded() {
+        return null;
+    }
+
+    public final String getFormat() {
+        return null;
+    }
+
+    public final void u() {
+    }
+
+    public final void y() {
+    }
+}

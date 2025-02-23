@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_ll" android:layout_below="@+id/header">
+        <LinearLayout android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_pg_option_cards" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Payment Methods" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_card_input" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <RelativeLayout android:id="@+id/rl_card_input" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="10dp" android:src="@drawable/spinner_downwards" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="270"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:layout_width="41dp" android:layout_height="28dp" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="10dp" android:src="@drawable/credit_card"/>
+                                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Credit Card / Debit Card" android:fontFamily="@font/open_sans_semibold"/>
+                                    <TextView android:textSize="11dp" android:textColor="#848484" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Visa, Master, Maestro,Amex" android:fontFamily="@font/open_sans"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/ll_card_details_input" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <EditText android:textSize="13dp" android:textColor="@color/dark" android:textColorHint="@color/colorAccent" android:id="@+id/et_card_number" android:background="@drawable/edittextborder" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="Card No." android:maxLength="19" android:inputType="number" android:fontFamily="@font/open_sans"/>
+                            <EditText android:textSize="13dp" android:textColor="@color/dark" android:textColorHint="@color/colorAccent" android:id="@+id/et_name_on_card" android:background="@drawable/edittextborder" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="Name on the Card " android:fontFamily="@font/open_sans"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+                                <TextView android:textSize="13dp" android:textColor="@color/dark" android:textColorHint="@color/colorAccent" android:id="@+id/et_card_validity" android:background="@drawable/edittextborder" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="3dp" android:hint="Expiry Date" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                                <EditText android:textSize="13dp" android:textColor="@color/dark" android:textColorHint="@color/colorAccent" android:id="@+id/et_cvv" android:background="@drawable/edittextborder" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="20dp" android:hint="Enter CVV" android:maxLength="4" android:layout_weight="1" android:inputType="number" android:fontFamily="@font/open_sans"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp" android:layout_marginBottom="5dp"/>
+                <RelativeLayout android:id="@+id/ll_pg_option_netbanking" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+                    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="10dp" android:src="@drawable/spinner_downwards" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="270"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="41dp" android:layout_height="28dp" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="10dp" android:src="@drawable/credit_card"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_banking" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="11dp" android:textColor="#848484" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All Banks are supported" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp" android:layout_marginBottom="0dp"/>
+                <RelativeLayout android:id="@+id/ll_pg_option_wallet" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="10dp" android:src="@drawable/spinner_downwards" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="270"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="41dp" android:layout_height="28dp" android:layout_marginTop="@dimen/dimen_5" android:layout_marginRight="10dp" android:src="@drawable/credit_card"/>
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:id="@+id/tv_pg_option_wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mobikwik Wallet" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/payment_option_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/payment_option_bottom"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/bottom_ll" android:background="@color/bottom_dark" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="17dp" android:textColor="@color/white" android:id="@+id/tv_total_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 1935" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="8dp" android:textColor="@color/white" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 1935" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/pay_now" android:background="@drawable/round_red_fill" android:paddingLeft="25dp" android:paddingTop="7dp" android:paddingRight="25dp" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="34dp" android:text="@string/pay_now" android:drawableLeft="@drawable/lock" android:drawablePadding="7dp" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

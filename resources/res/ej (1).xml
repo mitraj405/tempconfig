@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#e5f4f7" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout3" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_pnr_number" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/pnr_label" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="PNR : " fontFamily="fonts/Roboto-Regular.ttf"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/pnr_number" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="0000000000" fontFamily="fonts/Roboto-Regular.ttf"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_txn_id" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/txn_id_label" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="Transcation ID : " fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/txn_id" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="0000000000" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:id="@+id/il_train_number_layout" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/train_number_for_vikalp" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                            <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/tv_train_number" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:maxLength="5" android:digits="1234567890" android:windowSoftInputMode="adjustPan" android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                            <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_vikalp_train_date" android:background="@color/white_90_opa" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/vikalp_train_date" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:text="Select Journey Date" fontFamily="fonts/Roboto-Light.ttf"/>
+                        <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_otp" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/black_90_opa" android:id="@+id/il_otp" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/otp" ads:hintTextAppearance="@style/CustomHintEnabledForPassenger">
+                            <EditText android:textSize="13dp" android:textColor="@color/black_90_opa" android:id="@+id/otp" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:maxLength="5" android:digits="1234567890" android:windowSoftInputMode="adjustPan" android:textCursorDrawable="@drawable/edittext_cursor_color" fontFamily="fonts/Roboto-Light.ttf"/>
+                            <View android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20dp" android:textColor="@color/PrimaryColor" android:layout_gravity="center" android:id="@+id/tv_submit" android:background="@drawable/white_btn_state" android:visibility="visible" android:layout_width="250dp" android:layout_marginTop="80dp" android:layout_marginBottom="10dp" android:text="@string/submit" fontFamily="fonts/Roboto-Medium.ttf" style="@style/btn.primary.blue"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

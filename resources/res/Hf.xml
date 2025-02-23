@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header" android:background="@drawable/btn_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/profile_ll" android:paddingLeft="22dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/ic_circlewhite" android:padding="15dp" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/footer_account" android:tint="@color/white"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                <TextView android:textSize="13dp" android:textColor="@color/white" android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ravi Sharma" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="13dp" android:textColor="@color/white" android:id="@+id/tv_update_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Edit Profile" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/myprofile_ll" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="17dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/my_profile"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/my_profile" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/my_transaction_history" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/wallet_grey"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/my_transaction" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_ewallet" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/ewallet_dropdown_img" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/wallet_grey"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_ewallet_menu" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                    <View android:id="@+id/ewallet_about_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_about_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ewallet_about"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/about_irctc_eWallet" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_user_guide_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_user_guide_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ewallet_user_guide"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_user_guide" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_forgot_pwd_view" android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_forgot_pwd_rl" android:background="@color/white" android:padding="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ewallet_forgot_txn_pwd"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_forgot_txn_pwd" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_deposit_view" android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_deposit_rl" android:background="@color/white" android:padding="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ewallet_deposit"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_deposit1" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_deposit_history_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_deposit_history_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ewallet_deposit_history"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_deposit_history" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_acc_transaction_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_acc_transaction_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/txns_logo"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_transactions1" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_refund_status_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_refund_status_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ewallet_refund_status"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_refund_status1" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_acc_statement_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_acc_statement_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/statements_logo"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_account_stmt" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_acc_register_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_acc_register_rl" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/statements_logo"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_registration" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/ewallet_acc_renewal_view" android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/ewallet_acc_renewal_rl" android:background="@color/white" android:padding="13dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/statements_logo"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/ewallet_renewal" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_masterlist" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/master_list"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/My_Master_List" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_loyalty" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/loyalty_dropdown_img" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/myloyaltyaccount"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Loyalty" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/view1" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_sbi_link" android:background="@color/white1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                <RelativeLayout android:id="@+id/rl_sbi_link" android:background="@color/white" android:padding="13dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/irctc_sbi_credit_card"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginLeft="10dp" android:text="@string/IRCTC_irctc_Credit_Card" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_Loyalty_show_hide" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                    <View android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_sbi_link" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/about_irctc_credit_card"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/IRCTC_SBI_Credit_Card" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/my_loyalty_account" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_txn" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/myloyaltyaccount"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/My_Loyalty_Account" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/loyaltyaccount_view" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_current_balance" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/currentpoint"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:id="@+id/loyalty_current_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Current_Points_Balance" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/purchase_pointview" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/purchase_loyalty_points_ll" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/purchase_irctc_points"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Purchase_Loyalty_points" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/irctc_sbiview" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_sbi_card_link" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/sbi_platinum_card"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/IRCTC_SBI_Platinum_Card_e_Apply" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/add_loyalty" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_bob_link" android:background="@color/white1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                <RelativeLayout android:id="@+id/rl_bob_link" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/irctc_sbi_credit_card"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/IRCTC_bob_Credit_Card" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_Loyalty_show_hide_bob" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                    <View android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_sbi_link_bob" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/about_irctc_credit_card"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/about_bob_Credit_Card" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/my_loyalty_account_bob" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_txn_bob" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/myloyaltyaccount"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/My_Loyalty_Account" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/loyaltyaccount_view_bob" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_current_balance_bob" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/currentpoint"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:id="@+id/loyalty_current_balance_bob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Current_Points_Balance" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/irctc_sbiview_bob" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_bob_card_link" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/sbi_platinum_card"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/IRCTC_bob_Platinum_Card_e_Apply" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@+id/view2" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_hdfc_link" android:background="@color/white1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                <RelativeLayout android:id="@+id/rl_hdfc_link" android:background="@color/white" android:padding="13dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/irctc_sbi_credit_card"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginLeft="10dp" android:text="@string/IRCTC_HDFC_Credit_Card" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_Loyalty_show_hide_hdfc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                    <View android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_hdfc_link" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/irctc_sbi_credit_card"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/about_hdfc_Credit_Card" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/loyaltyaccount_view_hdfc" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_current_balance_hdfc" android:background="@color/white" android:padding="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/currentpoint"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:id="@+id/loyalty_current_balance_hdfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Current_Points_Balance" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/irctc_view_hdfc" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/rl_loyalty_hdfc_card_link" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/sbi_platinum_card"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/IRCTC_hdfc_Platinum_Card_e_Apply" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_add_loyalty_account" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/myloyaltyaccount"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Add_Loyalty_Account" android:contentDescription="Add loyalty account" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/aadharkyc_ll" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/kyc_resized"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/authenticate_User" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_change_pwd" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/change_password"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_change_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Change_Password" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/view_change_txn_pwd" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_change_txn_pwd" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/change_password"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_change_txn_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/change_txn_password" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/view_forgot_txn_pwd" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_forgot_txn_pwd" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/change_password"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_forgot_txn_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/forgot_txn_password" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_release_pan_aadhaar" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center_vertical" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/change_password"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_release_pan_aadhaar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Release_PAN_AADHAAR" android:contentDescription="Release pan aadhaar" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_logout" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/spinner_upwards" android:layout_alignParentRight="true" android:rotation="90"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/logout"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_logout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Logout" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="#faf7f7" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="12dp" android:textColor="@color/blue" android:id="@+id/tv_terms_conditions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/turmand_condition" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="10dp" android:textColor="@color/blue" android:id="@+id/tv_privacy_polict" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Privacy_Policy" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+            </RelativeLayout>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/myaccount_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="@dimen/dimen_5" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/myaccount_ads"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

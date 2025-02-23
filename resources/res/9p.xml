@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/psgn_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold"/>
+        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/psgn_age_gender_food" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text=" " android:fontFamily="@font/open_sans"/>
+        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/srctz_concession_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text=" " android:fontFamily="@font/open_sans"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="@dimen/size80">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="left" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Booking_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="center" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Coach" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="center" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Berth" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="center" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Berth_Type" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Current_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/bkg_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/coach" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text=" " android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/berth" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/berth_type" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text=" " android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/crnt_status_label" android:layout_width="wrap_content" android:layout_height="20dp" android:text=" " android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:id="@+id/positionTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmrc_passenger" android:fontFamily="@font/open_sans_bold"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/qr_code" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_200" android:layout_centerInParent="true"/>
+        <TextView android:textSize="30dp" android:textColor="@color/dark_red" android:id="@+id/qr_cancel_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:rotation="-45" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+    </RelativeLayout>
+    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:layout_gravity="center" android:id="@+id/qr_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+</LinearLayout>

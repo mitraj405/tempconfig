@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/last_transation_detail_ll" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:padding="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:padding="0dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:id="@+id/last_txn_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/tv_view_last_transation_tkt" android:background="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="View" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_txn_detail" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_semibold"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/last_txn_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="12dp" android:text="@string/last_txn_status" android:fontFamily="@font/open_sans_semibold"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/txn_ID" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_transation_number" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="10002554656" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/txn_status" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_bkg_status" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Booked" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/txn_date" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_timestamp" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="25/01/2019, 16:52 Hrs" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/last_txn_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/AD_ID_SBANNER"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/coming_journey_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <ImageView android:id="@+id/iv_upcoming_menu" android:visibility="gone" android:layout_width="16dp" android:layout_height="20dp" android:src="@drawable/footer_more" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold" android:layout_marginEnd="10dp"/>
+                        <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UPCOMING JOURNEY" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/transaction_id_label" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Txn Id:" android:fontFamily="@font/open_sans"/>
+                                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/transaction_id" android:background="@color/white" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="122555445555" android:fontFamily="@font/open_sans_semibold"/>
+                                    </LinearLayout>
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="PNR: " android:layout_toLeftOf="@+id/pnr_id"/>
+                                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/pnr_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="T100015905" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                                    <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatiman" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/train_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="26565" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/yellow_light" android:id="@+id/upcoming_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="25dp" android:text="View" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/fromcitycode" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="DELHI" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                            <ImageView android:layout_width="20dp" android:layout_height="10dp" android:layout_marginTop="4dp" android:src="@drawable/arrow"/>
+                            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tocitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="GWALIOR" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="11dp" android:textStyle="normal" android:textColor="@color/dark" android:id="@+id/boarding_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Journey Date: " android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="11dp" android:textStyle="normal" android:textColor="@color/dark" android:id="@+id/boarding_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28 jan, 2019" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/dark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/last_refund_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RECENT CANCELLATION " android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/refundtransaction_id_label" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Txn Id: " android:fontFamily="@font/open_sans"/>
+                                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/refundtransaction_id" android:background="@color/white" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="122555445555" android:fontFamily="@font/open_sans_semibold"/>
+                                    </LinearLayout>
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="PNR: " android:layout_toLeftOf="@+id/refundpnr_id"/>
+                                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/refundpnr_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="T100015905" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/lasreftrain_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatimaan exp" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/refundtrain_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="26565" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/yellow_light" android:id="@+id/refund_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="25dp" android:text="View" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/refundfromcitycode" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="DELHI" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                            <ImageView android:layout_width="20dp" android:layout_height="10dp" android:layout_marginTop="4dp" android:src="@drawable/arrow"/>
+                            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/refundtocitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="GWALIOR" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="11dp" android:textStyle="normal" android:textColor="@color/dark" android:id="@+id/refundboarding_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Journey Date: " android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="11dp" android:textStyle="normal" android:textColor="@color/dark" android:id="@+id/refundboarding_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28 jan, 2019" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/refundstatus_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Booking Status:" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_refundstatus" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Booked"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/refundtrasaction_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refund Transaction" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_refundtrasaction" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=""/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/refundcancelationsta_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancellation Status:" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_refundcancelation" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=""/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/refundStatus_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refund Status:" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_refundStatusdetail" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/dark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/lasttxn_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RECENT TRANSACTION" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/lasttransaction_id_label" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Txn Id: " android:fontFamily="@font/open_sans"/>
+                                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/lasttransaction_id" android:background="@color/white" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="122555445555" android:fontFamily="@font/open_sans_semibold"/>
+                                    </LinearLayout>
+                                    <RelativeLayout android:id="@+id/rl_pnr" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="0dp" android:text="PNR: " android:layout_toLeftOf="@+id/lastpnr_id"/>
+                                        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/lastpnr_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="T100015905" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/lasttxntrain_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatimaan exp" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/lasttxntrain_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="26565" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/yellow_light" android:id="@+id/last_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="25dp" android:text="View" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/lastfromcitycode" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="DELHI" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                            <ImageView android:layout_width="20dp" android:layout_height="10dp" android:layout_marginTop="4dp" android:src="@drawable/arrow"/>
+                            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/lasttocitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="GWALIOR" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="11dp" android:textStyle="normal" android:textColor="@color/dark" android:id="@+id/lastboarding_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transaction Date: " android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="11dp" android:textStyle="normal" android:textColor="@color/dark" android:id="@+id/lastboarding_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28 jan, 2019" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/laststatus_ll" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Booking Status:" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_laststatus" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Booked"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lasttrasaction_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transaction Status:" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_lasttrasaction" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=""/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/lastpaymentStatus_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Payment Status:" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_lastpaymentStatus" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

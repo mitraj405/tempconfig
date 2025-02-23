@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/psgn_selection" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.15">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/name" android:layout_width="0dp" android:layout_height="match_parent" android:text="Dummy Name" android:layout_weight="1.2" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/psgn_age_gender" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="@string/Gender" android:layout_weight="0.8" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="left" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/booking_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="left" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/Current_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/bkg_status" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/current_status" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center_horizontal" android:id="@+id/select_meal" android:background="@drawable/border_highlight_indicator" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/select_meal" android:drawableRight="@drawable/spinner_downwards" android:fontFamily="@font/open_sans" android:textAlignment="center" android:drawableTint="@color/lightdark"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="9dp" android:textColor="@color/lightdark" android:gravity="right" android:id="@+id/tv_cateringCharges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Catering_Charges" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

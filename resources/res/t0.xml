@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textColor="@color/black_90_opa" android:ellipsize="end" android:id="@+id/tv_mealType" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brakfast " android:singleLine="false" android:layout_toRightOf="@+id/iv_meal_icon" fontFamily="fonts/Roboto-Regular.ttf"/>
+    <RelativeLayout android:id="@+id/rl_meal_row" android:background="@color/white" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/iv_meal_icon" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:drawableRight="@drawable/ic_veg"/>
+        <TextView android:textSize="15dp" android:textColor="@color/dark" android:ellipsize="end" android:id="@+id/tv_meal" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="150dp" android:text="vegBiryani " android:singleLine="false" android:layout_toRightOf="@+id/iv_meal_icon" fontFamily="fonts/Roboto-Regular.ttf"/>
+        <TextView android:textSize="13dp" android:textColor="@color/black_65_opa" android:id="@+id/tv_total_price" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ : 5752" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <LinearLayout android:id="@+id/edit_ll" android:background="@drawable/mealquantity" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_meal_min" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/ic_minus"/>
+                <TextView android:textSize="15dp" android:id="@+id/tv_addmeal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <ImageView android:id="@+id/iv_meal_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/ic_add"/>
+            </LinearLayout>
+            <TextView android:textSize="13dp" android:textColor="@color/black_65_opa" android:id="@+id/tv_total_price2" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ : 5752" android:layout_toLeftOf="@+id/edit_ll"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="13dp" android:textColor="@color/black_65_opa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="37dp" android:text="Total"/>
+    </LinearLayout>
+    <View android:background="@color/darkGrey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

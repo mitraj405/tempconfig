@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/height_256dp">
+        <ImageView android:id="@+id/iv_banner_ig" android:layout_width="match_parent" android:layout_height="@dimen/height_256dp" android:src="@drawable/black_bg_image" android:scaleType="fitXY"/>
+        <FrameLayout android:background="@drawable/gradient_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/st_pll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_15dp" android:includeFontPadding="false" android:layout_marginStart="@dimen/margin_20dp" android:layout_marginEnd="@dimen/margin_20dp">
+                <RelativeLayout android:id="@+id/ll_large_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_large_icon" android:layout_width="@dimen/width_35dp" android:layout_height="@dimen/height_35dp" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+                    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/ll_share_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_toEndOf="@+id/iv_large_icon" android:layout_alignParentEnd="true">
+                        <ImageView android:layout_gravity="center" android:id="@+id/iv_share_icon" android:layout_width="@dimen/width_17dp" android:layout_height="@dimen/height_17dp" android:src="@drawable/ic_baseline_share_24" android:contentDescription="@string/todo" android:layout_marginEnd="@dimen/margin_5dp"/>
+                        <TextView android:textColor="@color/iz_white" android:layout_gravity="center" android:id="@+id/tv_share_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iz_share" style="@style/TextAppearance.Compat.Notification.Info"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="end" android:orientation="horizontal" android:id="@+id/ll_timer_notification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+                    <ImageView android:layout_gravity="center" android:layout_width="@dimen/width_17dp" android:layout_height="@dimen/width_17dp" android:src="@drawable/iz_vector_white" android:contentDescription="@string/todo"/>
+                    <Chronometer android:textStyle="normal" android:textColor="@color/iz_white" android:layout_gravity="center" android:id="@+id/tv_notification_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/margin_5dp" style="@style/TextAppearance.Compat.Notification.Info"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="@dimen/margin_5dp" android:includeFontPadding="false" android:layout_weight="1" android:layout_marginStart="@dimen/margin_20dp" android:layout_marginEnd="@dimen/margin_20dp">
+                <TextView android:textSize="@dimen/text_14sp" android:textStyle="bold" android:textColor="@color/iz_white" android:ellipsize="end" android:id="@+id/tv_notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:includeFontPadding="false" android:lineSpacingExtra="-2sp" style="@style/TextAppearance.Compat.Notification.Title"/>
+                <RelativeLayout android:id="@+id/iz_tv_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/ll_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/ll_display_time" android:layout_alignParentStart="true">
+                        <TextView android:textSize="@dimen/text_13sp" android:textStyle="bold" android:textColor="@color/iz_button" android:ellipsize="end" android:id="@+id/tv_btn1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="17" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_8dp" android:layout_alignParentStart="true" style="@style/TextAppearance.Compat.Notification.Info"/>
+                        <TextView android:textSize="@dimen/text_13sp" android:textStyle="bold" android:textColor="@color/iz_button" android:ellipsize="end" android:id="@+id/tv_btn2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="17" android:layout_centerVertical="true" android:layout_toEndOf="@+id/tv_btn1" style="@style/TextAppearance.Compat.Notification.Info"/>
+                    </RelativeLayout>
+                    <LinearLayout android:id="@+id/ll_display_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_8dp" android:layout_alignParentEnd="true">
+                        <TextView android:textColor="@color/iz_button" android:layout_gravity="center_vertical" android:id="@+id/tv_display_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="11" style="@style/TextAppearance.Compat.Notification.Info"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_14sp" android:textColor="@color/iz_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_dismissed" android:background="@drawable/iz_timer_btn_corner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_45dp" android:layout_marginTop="@dimen/margin_4dp" android:layout_marginBottom="@dimen/margin_4dp" android:text="@string/iz_cta_dismissed" android:singleLine="true" android:textAllCaps="false" style="@style/TextAppearance.Compat.Notification.Title"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

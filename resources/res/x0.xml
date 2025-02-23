@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/qrTicket_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.9" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/current_status" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.1" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/cancellation_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

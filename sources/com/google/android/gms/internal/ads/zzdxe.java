@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+public final class zzdxe implements zzhfc {
+    private final zzhfu zza;
+
+    public zzdxe(zzhfu zzhfu, zzhfu zzhfu2) {
+        this.zza = zzhfu;
+    }
+
+    /* renamed from: zza */
+    public final zzdxx zzb() {
+        zzgcu zzgcu = zzbzo.zza;
+        zzhfk.zzb(zzgcu);
+        return new zzdxx((Context) this.zza.zzb(), zzgcu);
+    }
+}

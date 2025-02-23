@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_below="@+id/sort_by_spinner_text">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/no_fevourite_jrny" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="&apos;No Favourite Journey found. Please add favourite journey from Train List or Add Passenger page by clicking Favourite icon" android:fontFamily="@font/open_sans_bold"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_fev_journey_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_psgn_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1)   passenger 1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/tv_psgn_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="----, ---- " android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/tv_soft_userid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hgjhghgfg " android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/tv_psgn_food" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/tv_psgn_food_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/tv_srberth" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="berth" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+            <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/tv_psgn_idnum" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Unique id card : 123412341234" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_sr_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_semibold"/>
+    </LinearLayout>
+</LinearLayout>

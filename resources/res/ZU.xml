@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/tool_bar" android:background="@color/tool_bar_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/lhs_panel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/header">
+            <ImageButton android:id="@+id/header_back_button" android:src="@drawable/ic_arrow_back_white_24dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/IconClickable"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_centerInParent="true">
+                <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:textSize="@dimen/sp_22" android:textColor="@color/header_text_color" android:gravity="center_vertical" android:id="@+id/tv_left_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Payment in Progress" android:singleLine="true" android:layout_centerVertical="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <fragment android:name="com.paytm.easypay.EasypayBrowserFragment" android:id="@+id/easypayBrowserFragment" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tool_bar"/>
+</RelativeLayout>

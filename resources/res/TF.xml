@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_from_to_header_lap" android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/header_fromstn" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nbnvbbn" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="-" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/header_tomstn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="10dp" android:text="nbnvbbn" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/header_Via" android:paddingLeft="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Via agara" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="|" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/header_total_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Toatl Duration 11:50" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_tainname_haedind_lap1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/train_type_lap1" android:visibility="invisible" android:layout_width="20dp" android:layout_height="32dp" android:src="@drawable/trangleborder" android:tint="@color/red"/>
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/lap1_heading" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lap1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/selected_train_name" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatiman" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/selected_train_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="12554" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/iv_routmap" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/route_icon" android:tint="@color/dark" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/tain_detail_ll" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/tv_dep_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                            <View android:layout_gravity="center" android:background="@color/lightdark" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginRight="4dp"/>
+                            <TextView android:textSize="14dp" android:textColor="@color/lightdark" android:id="@+id/travel_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="03h 03m" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                            <View android:background="@color/lightdark" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginLeft="4dp"/>
+                        </LinearLayout>
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_arv_timee" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_dep_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_arv_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_from_stationname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ndls" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_to_stationname" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MMCT" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="15dp" android:textColor="@color/green" android:id="@+id/booking_status" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="jhvggffg" android:layout_toLeftOf="@+id/tv_quota" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_quota" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="11dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/psgnCount_Class_Quota" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_wait_duration_lap1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <View android:background="@color/lightdark" android:layout_width="115dp" android:layout_height="1dp" android:layout_marginRight="4dp"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_gravity="center" android:id="@+id/tv_wait_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Wait Duration: 03h 03m" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="4dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_tainname_haedind_lap2" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/train_type_lap2" android:visibility="invisible" android:layout_width="20dp" android:layout_height="32dp" android:src="@drawable/trangleborder" android:tint="@color/red"/>
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/lap2_heading" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Lap2" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/selected_train_name_lap2" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatiman" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/selected_train_number_lap2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="12554" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/iv_routmap_lap2" android:visibility="invisible" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/route_icon" android:tint="@color/dark" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/tain_detail_ll_lap2" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/tv_dep_time_lap2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                            <View android:layout_gravity="center" android:background="@color/lightdark" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginRight="4dp"/>
+                            <TextView android:textSize="14dp" android:textColor="@color/lightdark" android:id="@+id/travel_Time_lap2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="03h 03m" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                            <View android:background="@color/lightdark" android:layout_width="18dp" android:layout_height="1dp" android:layout_marginLeft="4dp"/>
+                        </LinearLayout>
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_arv_timee_lap2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_dep_date_lap2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_arv_date_lap2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tue, 15 Jan " android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_from_stationname_lap2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ndls" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_to_stationname_lap2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MMCT" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="15dp" android:textColor="@color/green" android:id="@+id/booking_status_lap2" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="jhvggffg" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_quota_lap2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="11dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/psgnCount_Class_Quota_lap2" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/passenger_detail_lap1" android:background="#efeff4" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/psgn_detail_lap1" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Passengers_Details_Lap1" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/psgn_detail_heading" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Passengers_Details" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/passenger_list" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/passanger_detail_lap2" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:orientation="horizontal" android:background="#efeff4" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14dp" android:textColor="@color/dark" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Passengers_Details_Lap2" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/passenger_list2" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/add_meal_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:paddingLeft="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Meal Opted For Lab 1" android:fontFamily="@font/open_sans_bold"/>
+                    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Meal Opted (Pay on Delivery)" android:fontFamily="@font/open_sans_bold"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_total_amount" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="₹ 550" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_addmeal_list" android:background="@color/white" android:paddingLeft="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/darkGrey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/add_meal_ll_lap2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Meal Opted For Lab 2" android:fontFamily="@font/open_sans_bold"/>
+                    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_addmeal_list_lap2" android:background="@color/white" android:paddingLeft="15dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <View android:background="@color/darkGrey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <RelativeLayout android:id="@+id/add_meallab2_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/blue" android:id="@+id/tv_add_meal_detail_lap2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="+ Add Meal" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/colorAccent" android:id="@+id/ticket_sent_level" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/your_eticket_will_be_sent" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/travel_insurance_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/travel_insurance_ll_lap1" android:background="#efeff4" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_travel_insurance" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_insurance_opt_lap1" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Travel_Insurance_Opted_Lap1" android:layout_weight="0.5" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_insurance_opt" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ye" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/travel_insurance_ll_lap2" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Travel_Insurance_Opted_Lap2" android:layout_weight="0.5" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_insurance_opt_lap2" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ye" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_payment_method_label" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Payment_Method" android:layout_weight="1.75" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                            <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_payment_method_label" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_captch_input" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Captcha" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:background="@drawable/edittextborder" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:weightSum="10">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                            <RelativeLayout android:background="@color/yellow" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+                                <TextView android:textSize="18dp" android:textColor="@color/white" android:id="@+id/loading_captcha" android:paddingLeft="6dp" android:layout_width="160dp" android:layout_height="50dp" android:layout_marginLeft="3dp" android:layout_marginTop="7dp" android:layout_marginBottom="10dp" android:text="Loading Captcha..."/>
+                                <ImageView android:textColor="@color/black_90_opa" android:id="@+id/captcha" android:visibility="gone" android:layout_width="150dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="center" android:id="@+id/captcharefresh" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="@dimen/dp_2" android:layout_marginRight="10dp" android:src="@drawable/ic_autorenew_black_24dp" android:layout_weight="0.5"/>
+                        <RelativeLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4.5">
+                            <EditText android:textSize="17dp" android:textColor="@color/black_90_opa" android:textColorHint="@color/darkGrey" android:gravity="center" android:id="@+id/captcha_input" android:background="@drawable/edittextborder" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="7dp" android:layout_marginRight="11dp" android:hint="@string/Enter_captcha" android:singleLine="true" android:maxLength="10" android:windowSoftInputMode="adjustResize"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/nlp_heading" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Captcha" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/nlpcaptcha_layout" android:background="@color/white" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <cris.org.in.ima.NLPCaptchaWebView android:orientation="vertical" android:id="@+id/nlpcaptchaView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/v2_captcha_layout" android:background="@drawable/edittextborder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:baselineAligned="false" android:weightSum="10">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+                            <ImageView android:paddingTop="10dp" android:layout_width="50dp" android:layout_height="wrap_content" android:src="@drawable/verified" android:layout_marginStart="20dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4.5">
+                        <TextView android:textSize="18dp" android:textColor="@color/green" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="12dp" android:text="Captcha Verified" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/otp_input_layout" android:background="@drawable/edittextborder" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <EditText android:textSize="12dp" android:textColor="@color/dark" android:textColorHint="@color/colorAccent" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@+id/otp_input" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:hint="@string/aadhaar_otp" android:singleLine="true" android:maxLength="@integer/otp_max_length" android:digits="0123456789" android:inputType="number"/>
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+                        </LinearLayout>
+                        <TextView android:textSize="9dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/resend_opt" android:background="@drawable/round_red_fill" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/Re_Send" android:layout_weight="3" android:fontFamily="@font/open_sans" android:backgroundTint="@color/blue"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:background="@color/white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/termcondition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/insurance_terms_conditions_reviewpay" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/review_journey_bot_ad" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/review_journey_bottom"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@color/bottom_dark" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="17dp" android:textColor="@color/white" android:id="@+id/net_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 1935" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="9dp" android:textColor="@color/white" android:id="@+id/fare_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fare_summary" android:drawableRight="@drawable/fare_breakup" android:drawablePadding="7dp" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/red" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/make_payment" android:background="@drawable/round_red_fill" android:paddingLeft="25dp" android:paddingTop="5dp" android:paddingRight="25dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Proceed_to_Pay" android:drawableLeft="@drawable/lock" android:drawablePadding="7dp" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/fare_layout" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:padding="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/farebreakup" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/fare_backup_single_jrny" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fare_summary" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/ticket_fare" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/fastest_charge" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹ 1935" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/travel_insurance_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/Travel_Insurance_Premium" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/insurance_charge" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹ 0" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/Convenience_Fee" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_ConvenienceFee" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹ 0" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/IRCTC_Service_Charge" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/service_charges" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹ 0" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/Total_Amount" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/total_amount" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="₹ 1935" android:drawableLeft="@drawable/check" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold" android:drawableTint="@color/white"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

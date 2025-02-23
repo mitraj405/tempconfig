@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/color_search_train" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/color_search_train" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+            <ImageView android:id="@+id/back" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/left" android:tint="@color/dark" android:layout_centerVertical="true" android:contentDescription="back"/>
+            <EditText android:textSize="13dp" android:textColor="@color/lightdark" android:id="@+id/tv_search_text" android:background="@color/color_search_train" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/enter_city__satation_code" android:singleLine="true" android:layout_toRightOf="@+id/back" android:layout_centerVertical="true" android:inputType="textNoSuggestions" android:fontFamily="@font/open_sans_semibold"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="#edecec" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/favourity_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textSize="12dp" android:textColor="@color/lightdark" android:id="@+id/tv_favourite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:text="@string/Journeys" android:fontFamily="@font/open_sans_bold"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_favourite_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_above="@+id/tv_register" android:layout_below="@+id/tv_recent_search" android:layout_marginStart="@dimen/dimen_20"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/popular_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/lightdark" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textSize="12dp" android:textColor="@color/lightdark" android:id="@+id/tv_popular" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="5dp" android:text="@string/Stations" android:fontFamily="@font/open_sans_bold"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_popularstation_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_above="@+id/tv_register" android:layout_below="@+id/tv_recent_search" android:layout_marginStart="@dimen/dimen_20"/>
+            </LinearLayout>
+            <View android:id="@+id/view_recentsearch" android:background="@color/lightdark" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/lightdark" android:id="@+id/tv_recent_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:text="@string/Recent_Searches" android:fontFamily="@font/open_sans_bold"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_station_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_above="@+id/tv_register" android:layout_below="@+id/tv_recent_search" android:layout_marginStart="@dimen/dimen_20"/>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/publisherAdView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/select_train_station_bottom"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/main_ll" android:background="@drawable/round_light_corner2" android:paddingLeft="4dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="4dp" android:layout_width="118dp" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="5dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/class_fare_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/tv_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SL" android:layout_weight="1" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500" android:layout_weight="1" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+        </LinearLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/tv_journeyDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="14 jan 2020" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+            <TextView android:textSize="14dp" android:id="@+id/tv_avl_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AVL 100" android:layout_weight="1" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_cnf_probability" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99%" android:layout_weight="1" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/refresh_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refresh" android:fontFamily="@font/open_sans_bold"/>
+            <ImageView android:layout_width="20dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/refresh_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

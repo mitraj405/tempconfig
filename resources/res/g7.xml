@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rs_details_layout" android:background="@color/white" android:paddingTop="25dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp">
+        <RelativeLayout android:id="@+id/rs_transaction_id_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_transaction_id_tv" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/rs_transaction_id_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rs_refund_amount_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_refund_amount_tv" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/rs_refund_amount_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rs_refund_date_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_refund_date_tv" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/rs_refund_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rs_refund_status_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_refund_status_tv" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/rs_refund_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rs_reason_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_reason_tv" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/rs_reason_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/rs_viewmargin" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="10dp"/>
+</androidx.cardview.widget.CardView>

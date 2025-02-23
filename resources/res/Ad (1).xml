@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/dmrc_ticketDetails_rl" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="7dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_from_station_delhi_metro" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:layout_width="20dp" android:layout_height="32dp" android:src="@drawable/location_green"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/light_gray" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size5" android:text="@string/From" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/dmrc_fromStn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="@dimen/size5" android:hint="" android:textAllCaps="false" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="1">
+                    <ImageView android:layout_width="20dp" android:layout_height="32dp" android:src="@drawable/location_red"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/light_gray" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size5" android:text="@string/to" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/dmrc_toStn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginTop="@dimen/size5" android:hint="" android:textAllCaps="false" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="12dp" android:paddingLeft="30dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/scan_qr_metro" android:fontFamily="@font/open_sans_bold" android:textAlignment="center"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmrc_passenger" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:id="@+id/num_of_passenger" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3">
+                    <ImageView android:id="@+id/left_arrow" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/down_arrow_hide" android:tint="@color/grey" android:layout_weight="0.5" android:rotation="90"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.4">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/dmrc_qr_code_view_pager" android:layout_width="@dimen/size250" android:layout_height="@dimen/size250"/>
+                    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/indicator_rv" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" ads:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3">
+                    <ImageView android:id="@+id/right_arrow" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/down_arrow_hide" android:tint="@color/grey" android:rotation="-90"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/red" android:id="@+id/tickets_validity_infoMsg_txt" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="11dp" android:textColor="@color/black_80_opa" android:id="@+id/phone_screen_with_scratches" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/phone_screen_with_scratches" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="12dp" android:textColor="@color/green" android:id="@+id/dmrc_congratulation_msg" android:paddingLeft="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Congratulations_you_are_saving" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="14dp" android:textColor="@color/black_80_opa" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ticket_details" android:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="14dp" android:textColor="@color/lightdark" android:gravity="left" android:id="@+id/date_of_journey" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Journey_Date" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/black_80_opa" android:id="@+id/booking_date" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15/01/2024" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="14dp" android:textColor="@color/lightdark" android:gravity="left" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_of_tickets" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/black_80_opa" android:id="@+id/no_of_tickets" android:paddingLeft="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/lightdark" android:gravity="left" android:paddingLeft="15dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Transaction ID" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="14dp" android:textColor="@color/black_80_opa" android:id="@+id/transaction_id" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="9645781223547565465" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/qrImage_layout" android:background="@color/bottom_dark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/bgFrame" android:padding="10dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="end" android:orientation="vertical" android:id="@+id/qrImgCross_ll" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/qrImgCross" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_cross"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/qrImg_ll" android:layout_width="match_parent" android:layout_height="500dp" android:layout_marginTop="20dp" android:layout_below="@+id/qrImgCross_ll">
+                <ImageView android:id="@+id/qrImg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/qrImg_ll">
+                <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/qr_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1234567890" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

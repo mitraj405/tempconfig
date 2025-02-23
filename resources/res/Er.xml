@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/pnr_equiry_top" android:layout_width="wrap_content" android:layout_height="@dimen/size70" ads:adSize="BANNER" ads:adUnitId="@string/pnr_enquiry_top_ad"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="15dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/tv_pnr" android:background="@drawable/edittextborder" android:paddingLeft="30dp" android:paddingRight="30dp" android:paddingBottom="4dp" android:layout_width="210dp" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="" android:lines="1" android:maxLength="10" android:digits="0123456789" android:inputType="number" android:fontFamily="@font/open_sans"/>
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                    <TextView android:textSize="10dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_search" android:background="@drawable/round_red_fill" android:paddingLeft="20dp" android:paddingTop="8dp" android:paddingRight="20dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/search_pnr" android:layout_centerInParent="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/cnf_btn_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <TextView android:textSize="15dp" android:textStyle="normal" android:textColor="@color/blue" android:layout_gravity="center" android:id="@+id/pre" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cnf_label" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="12dp" android:textStyle="normal" android:textColor="@color/blue" android:layout_gravity="center" android:id="@+id/cnf_check_details" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Check_Details" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/tv_psgn_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/pnr_equiry_result_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_10" ads:adSize="BANNER" ads:adUnitId="@string/pnr_equiry_result_top"/>
+                <include android:visibility="visible" layout="@layout/item_basic_booking_info_new"/>
+                <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/psgn_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_delay_msg" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="13dp" android:textColor="@color/red" android:id="@+id/tv_delay_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ticket_fare" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ticket_fare" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=": ₹  " android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/total_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1935" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Charting_Status" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_chart_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_delay_value" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Delay" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_delay_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="  Hrs" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/remarks_rl" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Remarks" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":  " android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/remarks_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_ir_recovers" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/tv_psgn_detail">
+                <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="30dp" android:text="@string/Favourite_pnr" android:layout_centerInParent="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/tv_fav_pnr" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/lightdark" android:dividerHeight="0.5dp"/>
+            </LinearLayout>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/pnr_equiry_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/lower_bot_ads_pnrenqiry"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="10dp">
+                <TextView android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Note"/>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1."/>
+                    <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favourite_refund_msg"/>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2."/>
+                    <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favourite_no_refund_rac_msg"/>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3."/>
+                    <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favourite_msg"/>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4."/>
+                    <TextView android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favourite_new_refund_rule_msg"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dp_40"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

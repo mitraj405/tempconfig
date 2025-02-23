@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/change" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_send_otp" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:weightSum="2">
+                <EditText android:textSize="14sp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/et_forgot_pwd_email" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Enter_E_Mail_ID" android:layout_weight="2.5" android:contentDescription="enter email id" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:visibility="invisible" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:weightSum="2">
+                <EditText android:textSize="14sp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/et_forgot_pwd_login_pwd" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Enter_Login_Password" android:layout_weight="2.5" android:contentDescription="enter login password" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:id="@+id/tv_forgot_pwd_login_pwd_show_hide" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:contentDescription="show password" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_forgot_pass" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size8" android:weightSum="2">
+                <EditText android:textSize="14dp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/verify_OTP" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/otp" android:maxLength="@integer/otp_max_length" android:digits="0123456789" android:layout_weight="2.5" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:visibility="invisible" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size8" android:weightSum="2">
+                <EditText android:textSize="14dp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/new_Password" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Enter_New_Password" android:layout_weight="2.5" android:contentDescription="enter new password" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:id="@+id/newPass_Visibi" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:contentDescription="show password" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/characters_long_capital_small_numeric"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size8" android:weightSum="2">
+                <EditText android:textSize="14dp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/et_confirm_password" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/Enter_Confirm_Password" android:layout_weight="2.5" android:contentDescription="enter confirm password" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:id="@+id/conPass_Visibi" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:contentDescription="show password" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.admanager.AdManagerAdView android:id="@+id/multiple_ad_sizes_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/change" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/lower_bots_chngpass"/>
+</RelativeLayout>

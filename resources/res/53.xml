@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fevJourney_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="10dp" android:id="@+id/fev_radio" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginBottom="@dimen/dimen_5" android:button="@drawable/radiobutton" android:text="" android:scaleX="1.5" android:scaleY="1.5"/>
+            <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_trainname" android:paddingLeft="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="1.2dp" android:layout_marginBottom="@dimen/dimen_5" android:button="@drawable/radiobutton" android:text="khjdvhkjjh" android:layout_alignLeft="@+id/avl_radio" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="12dp" android:textStyle="bold" android:id="@+id/tv_trainnumber" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="1.2dp" android:layout_marginBottom="@dimen/dimen_5" android:button="@drawable/radiobutton" android:text="12356" android:layout_alignLeft="@+id/avl_radio" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/tv_quata" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="1.2dp" android:layout_marginBottom="@dimen/dimen_5" android:button="@drawable/radiobutton" android:text="Quota" android:layout_alignLeft="@+id/avl_radio" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/tv_trainquata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="1.2dp" android:layout_marginBottom="@dimen/dimen_5" android:button="@drawable/radiobutton" android:text="GN" android:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/tv_fevclass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Class: " android:layout_toLeftOf="@+id/tv_fevjou_class"/>
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/tv_fevjou_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="1A" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="63dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/fromcitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DELHI" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+        <ImageView android:layout_width="20dp" android:layout_height="10dp" android:layout_marginLeft="0dp" android:layout_marginTop="5dp" android:src="@drawable/arrow"/>
+        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tocitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="GWALIOR" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+    </LinearLayout>
+    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/loyalty_bank_ll" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="18dp" android:textColor="@color/dark" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Bank_Name" android:fontFamily="@font/open_sans_semibold"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/lightgreytxt" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"/>
+                    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/loayalty_bank_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="10dp" android:layout_marginTop="7dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/lightgreytxt" android:id="@+id/loyalty_bank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_bank_name" android:layout_centerVertical="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/loyalty_membership_detail_ll" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_loyalty_id_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Loyalty_Membership_ID" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textColor="@color/dark" android:id="@+id/tv_loyality_number" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textColor="@color/dark" android:id="@+id/tv_total_points_avl_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Total_Points_Available" android:fontFamily="@font/open_sans"/>
+                        <TextView android:id="@+id/tv_total_point" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textColor="@color/dark" android:id="@+id/tv_points_avl_redeem_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Points_Available_Redeem" android:fontFamily="@font/open_sans"/>
+                        <TextView android:id="@+id/tv_total_Redem_point" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textColor="@color/dark" android:id="@+id/tv_sbicard_travel_points_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SBI_Card_Travel_Points" android:contentDescription="s b i Card Travel Points" android:fontFamily="@font/open_sans"/>
+                        <TextView android:id="@+id/tv_sbi_Reward_point" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                        <TextView android:textColor="@color/dark" android:id="@+id/tv_sbi_points_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SBI_Points" android:contentDescription="s b i Points" android:fontFamily="@font/open_sans"/>
+                        <TextView android:id="@+id/tv_sbi_point" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/dark" android:id="@+id/tv_irctc_purchase_points_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/IRCTC_Purchase_Points" android:fontFamily="@font/open_sans"/>
+                        <TextView android:id="@+id/tv_irctc_purchase_point" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/contact_detail_rl" android:background="@color/white" android:paddingLeft="@dimen/dimen_15" android:paddingTop="10dp" android:paddingRight="2dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+                    <TextView android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/Contact_Details" android:fontFamily="@font/open_sans"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="15dp" android:layout_height="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/contact_detail" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/For_General_Queries" android:fontFamily="@font/open_sans"/>
+                    <LinearLayout android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/Helpline_Nos" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/dark" android:autoLink="phone" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+91-124-39021212" android:fontFamily="@font/open_sans"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textColor="@color/dark" android:autoLink="phone" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18001801295" android:contentDescription="1 8 0 0 1 8 0 1 2 9 5" android:fontFamily="@font/open_sans"/>
+                                <TextView android:textSize="10dp" android:textColor="@color/dark" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/for_MTNL_and_BSNL_customers" android:fontFamily="@font/open_sans"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/Email" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/dark" android:autoLink="email" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="head.sbicards@ge.com" android:fontFamily="@font/open_sans"/>
+                            <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  /  " android:fontFamily="@font/open_sans"/>
+                            <TextView android:textColor="@color/dark" android:autoLink="email" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="irctc.support@ge.com" android:fontFamily="@font/open_sans"/>
+                            <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  /  " android:fontFamily="@font/open_sans"/>
+                            <TextView android:textColor="@color/dark" android:autoLink="email" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="services.sbicard@ge.com" android:fontFamily="@font/open_sans"/>
+                            <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  /  " android:fontFamily="@font/open_sans"/>
+                            <TextView android:textColor="@color/dark" android:autoLink="email" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="feedback.gesbi@ge.com" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/For_Technical_Issues" android:fontFamily="@font/open_sans" android:layout_marginVertical="10dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Email" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/dark" android:autoLink="email" android:linksClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="loyaltyprogram@irctc.co.in" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_radiogroup" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                    <TextView android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/SELECT_OPTION" android:fontFamily="@font/open_sans"/>
+                    <RadioGroup android:orientation="horizontal" android:id="@+id/radiogroup_points" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                        <RadioButton android:id="@+id/tv_accural" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radiobutton" android:text="@string/Accrual" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                        <RadioButton android:id="@+id/tv_redemption" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/radiobutton" android:text="@string/Redemption" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/heading_loyaltyno_ll" android:background="@color/white_90_opa" android:paddingLeft="10dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:background="@color/white_90_opa" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/S_No" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:background="@color/white_90_opa" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Loyalty_Number" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white_90_opa" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayout1" android:background="@color/white_90_opa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayoutMain" android:background="@color/white_90_opa" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/addremove_loyaltyid_rl" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:layout_marginBottom="10dp">
+                    <TextView android:textColor="@color/blue" android:id="@+id/tv_addmore_link" android:paddingLeft="10dp" android:paddingTop="@dimen/dp_2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Add_More" android:drawableLeft="@drawable/ic_add" android:drawableTint="@color/blue"/>
+                    <TextView android:textColor="@color/blue" android:id="@+id/tv_remove_link" android:paddingTop="@dimen/dp_2" android:paddingRight="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Remove" android:drawableLeft="@drawable/ic_minus" android:layout_alignParentRight="true" android:drawableTint="@color/blue"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bottom_dark" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_skip" android:paddingLeft="5dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="35dp" android:button="@drawable/radiobutton" android:text="@string/Skip" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/red" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/journey_detail" android:background="@drawable/round_red_fill" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="35dp" android:text="@string/Continue" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

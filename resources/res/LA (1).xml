@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/rs_ewalet_empty_list" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:fontFamily="@font/open_sans" android:paddingVertical="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rs_tnx_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rs_filter_rl" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/rs_filter_rl_ll" android:background="@drawable/below_popup_white_bg" android:paddingTop="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginHorizontal="20dp">
+                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_filters" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/blue" android:id="@+id/rs_reset_tv" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_reset" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_date_from" android:fontFamily="@fonquota_bottom_llt/open_sans"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/rs_date_from_tv" android:background="@drawable/edittextborder" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" android:inputType="number" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                                <TextView android:id="@+id/rs_date_from_calendar" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/calender_small" android:scaleX="1.4" android:scaleY="1.4" android:drawableTint="@color/lightdark"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginHorizontal="20dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rs_date_upto" android:fontFamily="@fonquota_bottom_llt/open_sans"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/rs_date_upto_tv" android:background="@drawable/edittextborder" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" android:inputType="number" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                                <TextView android:id="@+id/rs_date_upto_calendar" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/calender_small" android:scaleX="1.4" android:scaleY="1.4" android:drawableTint="@color/lightdark"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:background="@color/bottom_dark" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/rs_apply_tv" android:background="@drawable/round_red_fill" android:padding="7dp" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/rs_apply_filters" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

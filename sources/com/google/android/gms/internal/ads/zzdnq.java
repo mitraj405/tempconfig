@@ -1,0 +1,14 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+final class zzdnq implements zzgcf {
+    public zzdnq(zzdoa zzdoa) {
+    }
+
+    public final /* synthetic */ void zzb(Object obj) {
+        ((zzcej) obj).destroy();
+    }
+
+    public final void zza(Throwable th) {
+    }
+}

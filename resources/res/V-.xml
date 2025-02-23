@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/details_layout" android:background="@color/white" android:paddingTop="25dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="15dp">
+        <RelativeLayout android:id="@+id/transaction_id_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dh_transaction_id" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/transaction_id_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/payment_option_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dh_payment_option" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/payment_option_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/amount_deposited_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dh_amount_deposited" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/amount_deposited_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/deposit_date_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dh_deposit_date" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/deposit_date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/account_recharge_status_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dh_account_recharge_status" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/account_recharge_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/pay_refund_status_rl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dh_pay_refund_status" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/pay_refund_status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/viewmargin" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="10dp"/>
+</androidx.cardview.widget.CardView>

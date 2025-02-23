@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/contact_us_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/contact_us_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/lower_bot_ads_contactus"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5dp">
+                <RelativeLayout android:orientation="horizontal" android:background="@drawable/btn_gradient" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+                    <ImageView android:id="@+id/back" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/left" android:layout_centerVertical="true" android:contentDescription="back"/>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+                        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Fare_Breakup" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="9dp" android:textColor="@color/white" android:id="@+id/tv_sub_title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <ScrollView android:id="@+id/scroll_direct" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:background="#efefe5" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:textAlignment="gravity">
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Train No:" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/train_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15344" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_alignParentRight="true">
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/psgnClass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Class:" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/enqClass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3A" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:id="@+id/view11" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/base_fare1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/base_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/base_fare" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_basic_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 1624" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view1" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/reservation_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reservation_charges" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_reservation_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 40" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view2" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/super_fast_charge_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Superfast_Charges" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_superfast_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 40" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view3" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/tatkalcharge_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Tatkal_Charges" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_tatkal_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 0" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view4" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/dynamiccharge_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Dynamic_Charges" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_dynamic_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 650" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view5" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/othercharge_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Other_Charges" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_other_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 0" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view66" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/service_charges" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/GST" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_service_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 118" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:id="@+id/view6" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:id="@+id/cateringcharge_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Catering_Charges" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_catering_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 235" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_semibold"/>
+                    </RelativeLayout>
+                    <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Total_Amount" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_netpay_charges" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 2715" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+                    </RelativeLayout>
+                    <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="15dp"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/message_lable" android:background="@color/white" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/Note_fb" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/fare_lable_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:text="@string/fareback_msg" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <ScrollView android:id="@+id/scroll_indirect" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_fare_backup" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </ScrollView> android:id=&quot;@+id/scroll_indirect2&quot;\10            android:layout_width=&quot;match_parent&quot;\10            android:scrollbars=&quot;none&quot;\10            android:layout_height=&quot;match_parent&quot;&gt;
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

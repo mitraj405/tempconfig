@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ticket_details" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" ads:cardBackgroundColor="@color/white">
+    <LinearLayout android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:layout_marginRight="7dp" android:src="@drawable/train_grey"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/lightdark" android:id="@+id/train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Train Name" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/train_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="(Train no.)" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/cancelled_ID" android:layout_toLeftOf="@+id/cancellation_id" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/cancellation_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="--" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:id="@+id/fromcitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="From" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                    <ImageView android:layout_width="25dp" android:layout_height="10dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:src="@drawable/arrow"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:id="@+id/tocitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="TO" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/journey_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:text="Day, dd Month" android:fontFamily="@font/open_sans"/>
+        <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/metro_sercive_opted" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="@dimen/size10" android:text="Expand to view DMRC cancelled ticket details" android:fontFamily="@font/open_sans"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/expand_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/linked_pnr" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/transaction_id_bot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" --" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/metro_service_details" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Journey_date" android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/journy_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dmrc_total_fare" android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/dmrc_total_fare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_id" android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/service_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ticket_amount_paid" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/you_paid" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="8dp" android:text="@string/rupees" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/ticket_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="8dp" android:text="" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ti_refund_amount_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TI_refund_amount" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/rupees" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/ti_refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="--" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund_amount" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/rupees" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="--" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/dmrc_no_of_cancelled_psng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancelled_psng" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/no_of_cancelled_psng" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/dmrc_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/No_of_passengers" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/No_of_passengers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12dp"/>
+            <LinearLayout android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dmrc_ticket_no" android:layout_weight="0.9" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/Current_Status" android:layout_weight="1.1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dmrc_cancelation_id" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_metro_cancel_details_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="10sp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/dmrc_status_pending" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/status_pending" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="10dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/tkt_details1" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text=" Adults | | Qouta | Station" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+            <View android:id="@+id/viewline" android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_passenger_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/viewmargin" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="10dp"/>
+</androidx.cardview.widget.CardView>

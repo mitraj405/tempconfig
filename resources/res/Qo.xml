@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" ads:cardBackgroundColor="@color/white" ads:cardElevation="4dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2dp">
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/tv_color" android:layout_width="25dp" android:layout_height="45dp" android:layout_marginTop="-10dp" android:src="@drawable/pink_color"/>
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/tv_train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10dp" android:layout_marginTop="10dp" android:text="Gatimaan exp" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="18dp" android:textColor="#000000" android:id="@+id/tv_train_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:text="(12050)" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <RelativeLayout android:id="@+id/ll_routemap" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="14dp">
+                <ImageView android:enabled="false" android:layout_gravity="center" android:id="@+id/tv_favpnricon" android:paddingLeft="0dp" android:clickable="false" android:layout_width="50dp" android:layout_height="24dp" android:layout_marginRight="25dp" android:src="@mipmap/ic_fav_icon1" android:tint="#9a9a9a" android:layout_alignParentRight="true"/>
+                <ImageView android:id="@+id/iv_routmap" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/route_icon" android:tint="@color/dark" android:layout_alignParentRight="true" android:contentDescription="rout map"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:layout_marginBottom="10dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="17dp" android:textColor="@color/dark" android:id="@+id/dep_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <View android:layout_gravity="center" android:background="@color/lightdark" android:layout_width="20dp" android:layout_height="1dp" android:layout_marginRight="4dp"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/lightdark" android:id="@+id/travel_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="03h 03m" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                    <View android:background="@color/lightdark" android:layout_width="20dp" android:layout_height="1dp" android:layout_marginLeft="4dp"/>
+                </LinearLayout>
+                <TextView android:textSize="17dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/arv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="08:10" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_from_city_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="H Nizamuddin" android:textAllCaps="false" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_from_city_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(NZM)" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_via" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="Via Agra" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_to_city_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Gwalior" android:textAllCaps="false" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_to_city_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(GWL)" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rv_class_fare_avl" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="10dp" ads:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/avl_other_date_ll" android:background="@color/class_backgroundcolor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.88">
+                    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rv_train_class" android:background="@color/class_backgroundcolor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="10dp" ads:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="23dp" android:textColor="@color/dark" android:layout_gravity="right" android:id="@+id/tv_close" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="x" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/dark" android:layout_width="match_parent" android:layout_height="0.4dp" android:layout_marginTop="0dp" android:layout_marginBottom="7dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rv_availability_list" android:background="@color/class_backgroundcolor" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="10dp" ads:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/other_dates_cnf_update_ll" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/blue" android:id="@+id/tv_otherdate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Other Dates" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/cnf_probability_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/blue" android:id="@+id/tv_cnf_probability" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="CNF Probability" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12dp" android:textColor="@color/blue" android:gravity="right" android:id="@+id/tv_avl_updates" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15 mins ago" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="14dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="2">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:id="@+id/tv_dep_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="wed, 20 May"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:gravity="right" android:id="@+id/tv_arr_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="wed, 20 May"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="14dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_weight="2">
+            <TextView android:gravity="left" android:id="@+id/tv_layover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Layover: 06h 15m"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

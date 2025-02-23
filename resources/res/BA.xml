@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tkt_layout_id" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/details_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/bookTxnId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="transactions number" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/red" android:id="@+id/transaction_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/transaction_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_balance" android:layout_toLeftOf="@+id/closing_balance" android:fontFamily="@font/open_sans"/>
+            <TextView android:textSize="12dp" android:textColor="@color/colorAccent" android:id="@+id/closing_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>

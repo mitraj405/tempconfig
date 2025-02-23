@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/mealType" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Breakfast" android:singleLine="true" fontFamily="fonts/Roboto-Regular.ttf"/>
+            <View android:id="@+id/mealview" android:background="@color/grey" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/rl_meal_row" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/iv_meal_icon" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:drawableRight="@drawable/ic_veg"/>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/tv_meal" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="veg Biryani" android:singleLine="true" android:layout_toRightOf="@+id/iv_meal_icon" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textColor="@color/black_65_opa" android:gravity="right" android:id="@+id/tv_price" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹:350" android:layout_alignParentRight="true" fontFamily="fonts/Roboto-Regular.ttf"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11dp" android:ellipsize="end" android:id="@+id/tv_weight_meal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:text="(veg Biryani 250)  " android:singleLine="false" fontFamily="fonts/Roboto-Regular.ttf"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <RelativeLayout android:id="@+id/show_menuitem_rl" android:paddingLeft="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/im_show_mealdetail" android:layout_width="50dp" android:layout_height="25dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue"/>
+                    </RelativeLayout>
+                    <LinearLayout android:background="@drawable/mealquantity" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/iv_meal_min" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/ic_minus"/>
+                        <TextView android:textSize="14dp" android:id="@+id/tv_addmeal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <ImageView android:id="@+id/iv_meal_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/ic_add"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12dp" android:id="@+id/tv_mealdetail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:text="njnjnjnnjkk" fontFamily="fonts/Roboto-Regular.ttf"/>
+            <View android:background="@color/darkGrey" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Select">
+        <item>Rated for</item>
+        <item>Look and feel</item>
+        <item>Captcha</item>
+        <item>Login</item>
+        <item>OTP</item>
+        <item>Payment Issues</item>
+        <item>Advertisements</item>
+        <item>Registration</item>
+        <item>Others(to specify)</item>
+    </array>
+    <array name="array_name">
+        <item>प्रस्थान समय</item>
+    </array>
+    <array name="bank">
+        <item>बैंक चुनें</item>
+        <item>Vijaya bank</item>
+        <item>एसबीआई बैंक</item>
+    </array>
+    <array name="city">
+        <item>शहर</item>
+        <item>Bangalore</item>
+    </array>
+    <array name="class_type">
+        <item>कोई विकल्प नहीं</item>
+        <item>अपर बर्थ (यूबी)</item>
+        <item>मिडिल बर्थ (एमबी)</item>
+        <item>लोअर बर्थ (एलबी)</item>
+        <item>साइड अपर (एसयू)</item>
+        <item>साइड लोअर (एसएल)</item>
+    </array>
+    <array name="country">
+        <item>देश</item>
+        <item>भारत</item>
+    </array>
+    <array name="food_preference">
+        <item>Non Veg</item>
+        <item>Veg</item>
+    </array>
+    <array name="food_preference_code">
+        <item>N</item>
+        <item>V</item>
+    </array>
+    <array name="language">
+        <item>भाषा</item>
+        <item>हिंदी</item>
+        <item>English</item>
+    </array>
+    <array name="loyality_array">
+        <item>वार्षिक लेनदेन विवरण</item>
+        <item>आईआरसीटीसी लेनदेन विवरण</item>
+        <item>आईआरसीटीसी से खरीदे गए अंकों का विवरण</item>
+        <item>एसबीआई को-ब्रांड क्रेडिट कार्ड विवरण</item>
+        <item>रिडेम्पशन विवरण</item>
+    </array>
+    <array name="maritial_staus">
+        <item>वैवाहिक स्थिति</item>
+        <item>अकेला</item>
+        <item>विवाहित</item>
+    </array>
+    <array name="months">
+        <item>01 (January)</item>
+        <item>02 (February)</item>
+        <item>03 (March)</item>
+        <item>04 (April)</item>
+        <item>05 (May)</item>
+        <item>06 (June)</item>
+        <item>07 (July)</item>
+        <item>08 (August)</item>
+        <item>09 (September)</item>
+        <item>10 (October)</item>
+        <item>11 (November)</item>
+        <item>12 (December)</item>
+    </array>
+    <array name="nationality">
+        <item>भारत</item>
+        <item>अन्य</item>
+    </array>
+    <array name="questions">
+        <item>गोपनीय प्रश्न</item>
+        <item>प्रश्न 1</item>
+        <item>प्रश्न 2</item>
+        <item>प्रश्न 3</item>
+    </array>
+    <array name="srctzn_conc">
+        <item>Avail Concession</item>
+        <item>Forgo 50% concession</item>
+        <item>Forgo Full Concession</item>
+    </array>
+    <array name="state">
+        <item>State</item>
+        <item>karnataka</item>
+        <item>Kerala</item>
+        <item>Tamil Nadu</item>
+    </array>
+    <array name="tdr_reason">
+        <item>एसी खराब।</item>
+        <item>बिना उचित आईडी प्रूफ के यात्रा की।</item>
+        <item>टीटीई द्वारा गलत तरीके से बदला गया।</item>
+    </array>
+    <array name="ticketing">
+        <item>योजना\10 मेरी यात्रा</item>
+        <item>पीएनआर पूछताछ</item>
+        <item>मेरी बुकिंग</item>
+        <item>विफल\10लेनदेन</item>
+        <item>फ़ाइल टीडीआर</item>
+        <item>धनवापसी \10इतिहास</item>
+    </array>
+    <array name="trainTicketingImages">
+        <item>@drawable/file_tdr</item>
+        <item>@drawable/pnr_status</item>
+        <item>@drawable/failed_transaction</item>
+        <item>@drawable/refund_history</item>
+    </array>
+    <array name="utilities">
+        <item>भोजन बुक करें</item>
+        <item>उड़ान</item>
+        <item>आईआरसीटीसी\10पर्यटन</item>
+        <item>डिजिटल\10पत्रिका</item>
+    </array>
+    <array name="utilitiesImages">
+        <item>@drawable/flights</item>
+    </array>
+</resources>

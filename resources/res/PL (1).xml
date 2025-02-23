@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:id="@+id/as_acc_stmt" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/as_footer" android:layout_below="@+id/as_header">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/ewalet_acc_statment_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/AD_ID_eWALLET_acc_top"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_user_id" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_user_id_tv" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <TextView android:textSize="12dp" android:textColor="@color/green" android:id="@+id/as_account_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_user_name" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_user_name_tv" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/as_layout_regd_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_et_reg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_registration_date" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_regd_date" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/as_layout_transaction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_e_tId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_transaction_id" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_transaction_id" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/as_layout_amountDetails" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_wallet_balance" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_closing_balance" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_amount" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_amount" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_total_amount" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_total_amount" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_payment_gateway" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_total_gst" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_total_gst" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_cgst" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_cgst" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_ugst" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_ugst" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_igst" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_igst" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_sgst" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_sgst" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10dp">
+                <LinearLayout android:id="@+id/as_save_acc_stmt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/blue" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_save_acc_stmt" android:fontFamily="@font/open_sans_bold"/>
+                    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/download_ticket"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginBottom="10dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/as_ewallet_empty_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:fontFamily="@font/open_sans" android:textAlignment="center" android:paddingVertical="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/as_tnx_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/ewalet_acc_statment_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/AD_ID_eWALLET_acc_bottom"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/as_filter_rl" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/as_filter_rl_ll" android:background="@drawable/below_popup_white_bg" android:paddingTop="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginHorizontal="20dp">
+                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/dark" android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_filters" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/blue" android:id="@+id/as_reset_tv" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_reset" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_date_from" android:fontFamily="@fonquota_bottom_llt/open_sans"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/as_date_from_tv" android:background="@drawable/edittextborder" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" android:inputType="number" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                                <TextView android:id="@+id/as_date_from_calendar" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/calender_small" android:scaleX="1.4" android:scaleY="1.4" android:drawableTint="@color/lightdark"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_marginHorizontal="20dp">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textSize="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/as_date_upto" android:fontFamily="@fonquota_bottom_llt/open_sans"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/as_date_upto_tv" android:background="@drawable/edittextborder" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" android:inputType="number" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                                <TextView android:id="@+id/as_date_upto_calendar" android:paddingLeft="10dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/calender_small" android:scaleX="1.4" android:scaleY="1.4" android:drawableTint="@color/lightdark"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:background="@color/bottom_dark" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/as_apply_tv" android:background="@drawable/round_red_fill" android:padding="7dp" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/as_apply_filters" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

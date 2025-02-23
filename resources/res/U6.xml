@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/PrimaryColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/image" android:background="@android:color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pay with mobile wallet" fontFamily="fonts/Roboto-Medium.ttf"/>
+        <ImageView android:id="@+id/payment_mode_image" android:layout_width="wrap_content" android:layout_height="55dp" android:layout_marginTop="10dp" android:src="@drawable/page_sbi_buddy"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="16dp" android:textColor="@color/light_yellow" android:gravity="right" android:id="@+id/amount" android:background="@color/newbooking_selector_black" android:paddingTop="15dp" android:paddingRight="20dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Total Fare:   " android:layout_below="@+id/image" fontFamily="fonts/Roboto-Regular.ttf"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/hint_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/amount">
+                <TextView android:textSize="14dp" android:textColor="@color/white_90_opa" android:id="@+id/pgTxnMsg" android:background="@color/gray_theme" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" fontFamily="fonts/Roboto-Regular.ttf"/>
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/tv_otp_msg_info" android:background="@color/PrimaryColor" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Please enter your registered Mobikwik mobile number. We will send OTP to verify." fontFamily="fonts/Roboto-Regular.ttf"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/sbiBuddyOtpText_layout" android:background="@color/newbooking_selector_black" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rl_mobile_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/light_yellow" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_mobile_no" android:paddingRight="5dp" android:layout_width="125dp" android:layout_height="match_parent" android:text="@string/mobile_number" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="14dp" android:textColor="@android:color/white" android:id="@+id/et_sbiBuddyMobile" android:background="@null" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="9886158668" android:cursorVisible="true" android:inputType="number" android:textCursorDrawable="@drawable/white_cursor" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <View android:id="@+id/view2" android:layout_width="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="50dp" style="@style/profile.fields.divider"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/rl_pin_layout" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textColor="@color/light_yellow" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_pin" android:paddingRight="5dp" android:layout_width="125dp" android:layout_height="match_parent" android:text="@string/pin" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:textSize="14dp" android:textColor="@android:color/white" android:id="@+id/et_sbiBuddyPin" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" android:inputType="numberPassword" android:textCursorDrawable="@drawable/white_cursor" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <View android:id="@+id/view_pin_underline" android:background="@color/white" android:layout_width="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="50dp" style="@style/registration.fields.divider"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20dp" android:textColor="@color/PrimaryColor" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_login" android:background="@drawable/white_btn_state" android:layout_width="250dp" android:layout_marginTop="32dp" android:text="@string/pay_now" android:layout_below="@+id/main_layout" android:layout_centerHorizontal="true" fontFamily="fonts/Roboto-Medium.ttf" style="@style/btn.primary.blue"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

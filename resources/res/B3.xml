@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5dp">
+            <cris.org.in.ima.utils.StatusBarView android:background="@drawable/btn_gradient" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:layout_below="@+id/header">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:id="@+id/connecting_pnr_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="#efeff4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp"/>
+                    <View android:background="#efeff4" android:layout_width="match_parent" android:layout_height="10dp"/>
+                </LinearLayout>
+                <include layout="@layout/item_basic_booking_info_new"/>
+                <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_passenger_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:dividerHeight="1dp" android:layout_above="@+id/confirm" android:layout_below="@+id/select_layout"/>
+                    <View android:background="#efeff4" android:layout_width="match_parent" android:layout_height="10dp"/>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/cencellayout" android:background="@color/bottom_dark" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/optMeal" android:background="@drawable/round_red_fill" android:paddingLeft="50dp" android:paddingTop="8dp" android:paddingRight="50dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/book_Meal" android:fontFamily="@font/open_sans_semibold"/>
+    </RelativeLayout>
+</RelativeLayout>

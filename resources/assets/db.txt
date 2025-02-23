@@ -1,0 +1,287 @@
+{
+  "features": [
+    {
+      "autofill": "true",
+      "passwordtracker": "true",
+      "proceedhelper": "true",
+      "radiohelper": "true",
+      "otphelper": "true",
+      "customjs": "true"
+    }
+  ],
+  "config": [
+    {
+      "ttl": "60000"
+    }
+  ],
+  "rules": [
+    {
+      "id": "8",
+      "url": "https://netsafe.hdfcbank.com/ACSWeb/jsp/SCode.jsp",
+      "bank": "hdfc-cc",
+      "action": "passwordtracker",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "txtPassword",
+      "buttonSelectorName": "cmdSubmit"
+    },
+    {
+      "id": "3",
+      "url": "https://www.onlinesbi.com/merchant/merchantprelogin.htm",
+      "bank": "sbi",
+      "action": "proceedhelper",
+      "element": "input",
+      "selectorType": "id",
+      "selector": "Button2"
+    },
+    {
+      "id": "4",
+      "url": "http://10.0.28.74:8080/MerchantSite/",
+      "bank": "none",
+      "action": "proceedhelper",
+      "element": "form",
+      "selectorType": "tagname",
+      "selector": "form"
+    },
+    {
+      "id": "5",
+      "url": "https://netsafe.hdfcbank.com/ACSWeb/jsp/payerAuthOptions.jsp",
+      "query": "transType=payerAuth",
+      "bank": "hdfc-cc",
+      "action": "radiohelper",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "acsRadio",
+      "length": 2,
+      "option1": "Use Password",
+      "value1": "payerAuth",
+      "option2": "Use OTP",
+      "value2": "DYNAMIC",
+      "customjs": "customJs=function(){selectOption();};"
+    },
+    {
+      "id": "6",
+      "url": "https://netsafe.hdfcbank.com/ACSWeb/jsp/dynamicAuth.jsp",
+      "query": "transType=payerAuth",
+      "bank": "hdfc-cc-otp",
+      "action": "proceedhelper",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "cmdSubmit",
+      "silent": "true"
+    },
+    {
+      "id": "7",
+      "url": "https://netsafe.hdfcbank.com/ACSWeb/jsp/dynamicAuth.jsp",
+      "query": "transType=payerAuth",
+      "bank": "hdfc-cc-otp",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "txtOtpPassword",
+      "pattern": "password is (\\d{6})",
+      "customjs": "autoResendOtp=function(){generateOTP();};",
+      "regenerateOtp": "otpBtn"
+    },
+    {
+      "id": "9",
+      "url": "https://netsafe.hdfcbank.com/ACSWeb/jsp/dynamicAuth.jsp",
+      "query": "null",
+      "bank": "hdfc-cc",
+      "action": "proceedhelper",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "otpBtn",
+      "autoproceed": "true"
+    },
+    {
+      "id": "16",
+      "url": "http://10.0.28.74:8080/MerchantSite/",
+      "bank": "none",
+      "action": "autofill",
+      "element": "select",
+      "selectorType": "name",
+      "selector": "selAcct"
+    },
+    {
+      "id": "17",
+      "comment": "For icici dc dob verification flow",
+      "url": "https://www.3dsecure.icicibank.com/ACSWeb/EnrollWeb/ICICIBank/server/OtpServer",
+      "bank": "icici dc",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "txtAutoOtp",
+      "pattern": "One Time Password .* is (\\d{6})",
+      "resendEnabled": "false",
+      "customjs": "autoResendOtp=function(){generateOTP();};"
+    },
+    {
+      "id": "18",
+      "url": "https://acs.icicibank.com/acspage/cap",
+      "bank": "icici",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "otpPassword",
+      "pattern": "One Time Password .* (\\d{6})",
+      "resendEnabled": "false",
+      "customjs": "autoSubmitForm=function(){return submitPassword()};"
+    },
+    {
+      "id": "19",
+      "url": "https://acs.icicibank.com/acspage/cap",
+      "bank": "icici-cc",
+      "action": "proceedhelper",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "submitval",
+      "silent": "true",
+      "customjs": "if(document.getElementById('enterotppage').style.display != 'inline'){return false}"
+    },
+    {
+      "id": "20",
+      "url": "https://netbanking.hdfcbank.com/netbanking/merchant",
+      "bank": "hdfc-cc",
+      "action": "passwordtracker",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "fldPassword",
+      "customSelector": "var f = document.getElementsByName('bottom_frame')[0]; var fields = f.contentDocument.getElementsByName('fldPassword');",
+      "customjs": "if(!document.getElementsByName('bottom_frame')[0].contentDocument.getElementsByName('frmMain').length){return false}"
+    },
+    {
+      "id": "21",
+      "url": "https://acs.icicibank.com/acspage/cap",
+      "bank": "icici-cc",
+      "action": "passwordtracker",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "pin",
+      "customjs": "if(document.getElementById('enterotppage').style.display == 'inline'){return false}",
+      "buttonSelectorName": "submitval"
+    },
+    {
+      "id": "24",
+      "url": "https://www.3dsecure.icicibank.com/ACSWeb/EnrollWeb/ICICIBank/server/OtpServer",
+      "bank": "icici-cc",
+      "action": "proceedhelper",
+      "element": "form",
+      "selectorType": "name",
+      "selector": "frmPayerAuth",
+      "silent": "true"
+    },
+    {
+      "id": "25",
+      "url": "https://acs.onlinesbi.com/sbi/jsp/PAReqEntry.jsp",
+      "bank": "sbi-dc",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "otp",
+      "customjs": "autoResendOtp=function(){resendOTP();};"
+    },
+    {
+      "id": "28",
+      "url": "https://www.axisbank.co.in/BankAway",
+      "element": "input",
+      "selectorType": "text",
+      "selector": "CorporateSignonCorpId",
+      "bank": "Axis NB",
+      "action": "autofill"
+    },
+    {
+      "id": "29",
+      "url": "https://secure.axisbank.com/ACSWeb/EnrollWeb/AxisBank/server/AccessControlServer",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "txtPassword",
+      "bank": "Axis CC",
+      "action": "passwordtracker",
+      "buttonSelectorName": "cmdSubmit"
+    },
+    {
+      "id": "30",
+      "url": "https://secure.axisbank.com/ACSWeb/EnrollWeb/AxisBank/server/AccessControlServer",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "txtPassword",
+      "bank": "Axis DC",
+      "action": "passwordtracker",
+      "buttonSelectorName": "cmdSubmit"
+    },
+    {
+      "id": "34",
+      "url": "https://www.citibank.co.in/acspage/cap_nsapi.so?RID=21&VAA=B",
+      "bank": "citi-dc",
+      "action": "radiohelper",
+      "element": "input",
+      "selectorType": "name",
+      "selector": "radio",
+      "length": 2,
+      "option1": "IPIN",
+      "value1": "uid_tb_r",
+      "option2": "OTP",
+      "value2": "otp_tb_r"
+    },
+    {
+      "id": "35",
+      "url": "https://www.citibank.co.in/acspage/cap_nsapi.so?RID=21&VAA=B",
+      "bank": "citi-dc",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "otp",
+      "customjs": "autoSubmitForm=function(){return validateOTP(1);};"
+    },
+    {
+      "id": "36",
+      "url": "https://cards.indusind.com/IndusindBank/jsp/PAReqEntry.jsp",
+      "bank": "IndusInd-dc",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "userOtp",
+      "customjs": "autoResendOtp=function(){makeRequest();};"
+    },
+    {
+      "id": "37",
+      "url": "https://www.securepay.hsbc.co.in/SecurePay/servlet/Authenticate",
+      "bank": "hsbc-cc",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "password",
+      "customjs": "autoSubmitForm=function(){chkAuthPwd_OTP();};"
+    },
+    {
+      "id": "40",
+      "url": "https://netsafe.hdfcbank.com/ACSWeb/jsp/PayerAuth.jsp",
+      "bank": "hdfc-cc",
+      "action": "passwordtracker",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "txtPassword",
+      "buttonSelectorName": "cmdSubmit"
+    },
+    {
+      "id": "41",
+      "url": "https://secure.axisbank.com/ACSWeb/EnrollWeb/AxisBank/server/OtpServer",
+      "bank": "axis",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "password",
+      "selector": "otpValue"
+    },
+    {
+      "id": "42",
+      "url": "https://secure4.arcot.com/acspage/cap",
+      "bank": "sbi-cc",
+      "action": "otphelper",
+      "element": "input",
+      "selectorType": "text",
+      "selector": "otp",
+      "customjs": "autoSubmitForm=function(){return OnUserInput();};"
+    }
+  ]
+}

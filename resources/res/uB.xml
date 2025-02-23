@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:id="@+id/ll_pending_check" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/blue" android:id="@+id/tv_pending_check" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/adhaar_verufy_msg" android:paddingVertical="10dp"/>
+            </LinearLayout>
+            <TextView android:textSize="15dp" android:textColor="@color/light_yellow" android:gravity="center" android:id="@+id/tv_error_msg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/error" android:paddingVertical="10dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/master_passenger_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_msg_max_tickets" android:background="@color/lightBlue" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text=""/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_legend" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="10dp">
+                <TextView android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/verify_status"/>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/verified"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/psgn_verify"/>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:paddingTop="3dp" android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/ic_radio"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/not_verify_msg"/>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:paddingTop="3dp" android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/ic_orange_radio"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pending_psgn"/>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:paddingTop="4dp" android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/ic_white_arrow_right"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/re_verify"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/master_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:layout_below="@+id/master_passenger_list" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/master_list"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/editPassenger_ll" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/edit_passenger_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+        <include layout="@layout/layout_add_master_passenger"/>
+    </RelativeLayout>
+</RelativeLayout>

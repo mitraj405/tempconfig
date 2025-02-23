@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/lap1_heading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/psgn_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="----" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/psgn_age_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---,---" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/concession" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/food_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_comma" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="," android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/passport_no" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="left" android:id="@+id/tv_ticket_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/booking_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Coach" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Berth" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="center" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Berth_Type" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Current_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/tkt_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="---" android:layout_weight="1" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/coach_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/berth_no" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/berth_type" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/asterick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/red_star" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/current_Status_Details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="---" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+                <TextView android:textSize="11dp" android:textColor="@color/lightdark" android:gravity="left" android:id="@+id/tv_current_status" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/Current_Status" android:layout_weight="1" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/current_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fetch_latest_status" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="10dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/tap_currentStatus" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fetch_latest_status_note" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

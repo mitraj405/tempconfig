@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ticket_details" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="5dp" android:layout_marginRight="7dp" android:src="@drawable/train_grey"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/train_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gatimaan exp" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+                        <TextView android:textSize="11dp" android:textColor="@color/colorAccent" android:id="@+id/train_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/transaction_id_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/TI_refund_txnid" android:layout_toLeftOf="@+id/transaction_id" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/transaction_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="T100015905" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/booking_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/TI_refund_txndate" android:layout_toLeftOf="@+id/booking_date" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/booking_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="28 jan, 2019" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/fromcitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DELHI" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                    <ImageView android:layout_width="20dp" android:layout_height="10dp" android:layout_marginLeft="0dp" android:layout_marginTop="5dp" android:src="@drawable/arrow"/>
+                    <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tocitycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="GWALIOR" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/journey_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:text="Tue, 05 feb" android:fontFamily="@font/open_sans"/>
+        <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/green" android:id="@+id/metroTicketOpted" android:background="#efeff4" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dimen_5" android:paddingBottom="@dimen/dp_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size10" android:layout_marginBottom="@dimen/size10" android:text="Expand to view DMRC Refund details" android:layout_alignParentRight="true" android:fontFamily="@font/open_sans_bold"/>
+        <RelativeLayout android:id="@+id/ticket_status_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/ticket_status_l" android:background="#efeff4" android:paddingLeft="@dimen/dimen_5" android:paddingTop="@dimen/dp_2" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txn_status" android:layout_toLeftOf="@+id/tv_ticket_status" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/red" android:id="@+id/tv_ticket_status" android:background="#efeff4" android:paddingTop="@dimen/dp_2" android:paddingRight="@dimen/dimen_5" android:paddingBottom="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_bold"/>
+        </RelativeLayout>
+        <TextView android:textSize="10dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/tkt_details" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/expand_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="12dp"/>
+            <TextView android:textSize="11dp" android:textColor="@color/bottom_dark" android:layout_gravity="center" android:id="@+id/psgnCount_Class_Quota" android:background="#efeff4" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="2 Adults | AC Chair Car | General | H Nizamuddin" android:fontFamily="@font/open_sans_semibold"/>
+            <RelativeLayout android:id="@+id/cancellation_id_rl" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/pnr_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:text="@string/PNR_No" android:fontFamily="@font/open_sans_semibold"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/pnr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1234567890" android:layout_toRightOf="@+id/pnr_label" android:fontFamily="@font/open_sans_semibold"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/cancellation_id_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/cancellation_id_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/Cancelation_Refund_ID" android:layout_toLeftOf="@+id/cancellation_id" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/cancellation_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text=" T100015905" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/ticket_amount_label" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/amount_Deducted" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="match_parent" android:text=":  ₹  " android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/ticket_amount" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="12345.67" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/payment_status_ll" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_payment_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/Payment_Status" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refund_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refunded" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/failure_Reason_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/failure_Reason" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/failure_Reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="fhfghhjhj" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/refunddetail_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refund_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="@string/Refund_Detail" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refund_detail_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="gbbgf" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/TI_refund_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TI_refund_amount" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/rupees" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/TI_refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0.49" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="10dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/refund_amount_ll" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refundtext" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/refund_Amount" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refund_amount" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="12345.67" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/payment_mode_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:text="@string/bank_Name" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/payment_mode" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Irctc Walllet" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/refund_date_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:text="@string/refund_Date" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refund_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11 jan, 2019 | 7:21 AM " android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/refund_msg_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/refund_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="47dp" android:layout_marginTop="12dp" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/refund_history_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" ads:adSizes="BANNER" ads:adUnitId="@string/refund_history_center"/>
+    </LinearLayout>
+    <View android:id="@+id/viewmargin" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="10dp"/>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#edecec" android:layout_width="match_parent" android:layout_height="match_parent" ads:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView android:textColor="@color/red" android:gravity="center" android:layout_gravity="center" android:id="@+id/attention_msg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="300dp" android:text="@string/attention_msg" android:layout_centerInParent="true" android:rotation="-45"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab_dashboard" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_tab_dashboard">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/my_journey_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/book_ticket"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/train" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/flights_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/flights"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/flights" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_bus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/bus_lmage" android:paddingLeft="0dp" android:paddingTop="4.5dp" android:paddingRight="0dp" android:paddingBottom="4dp" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/bushd2"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/bus" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_hotel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/hotel_logo" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/hotelhd2"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Hotel" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/book_meal_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/book_meal_logo" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/book_meal"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Order_Food" android:fontFamily="@font/open_sans_semibold"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="0dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingRight="0dp" android:layout_width="226dp" android:layout_height="wrap_content" android:layout_weight="3">
+                        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="0dp" android:paddingTop="10dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/askdisha_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <ImageView android:visibility="visible" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/askdishanew"/>
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/ask_Disha" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/irctTourism_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <ImageView android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/tourism"/>
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Tourism" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ret_room" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <ImageView android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/ret_room"/>
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/Retiring_Room" android:contentDescription="@string/Retiring_Room" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/irctc_channel" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                <ImageView android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/irctc_channel"/>
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/IRCTC_Channel" android:contentDescription="@string/IRCTC_on_Youtube" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/amazon_daily_deals" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:contentDescription=" ">
+                                <ImageView android:layout_gravity="center" android:paddingLeft="2dp" android:paddingTop="5.5dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="65dp" android:layout_height="65dp" android:src="@drawable/amazon_daily_deals"/>
+                                <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/daily_deals" android:fontFamily="@font/open_sans_semibold"/>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/gift_ll" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/content_Cube_Ad" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="18dp" android:layout_weight="2">
+                        <LinearLayout android:orientation="vertical" android:layout_width="150dp" android:layout_height="150dp">
+                            <WebView android:layout_gravity="center" android:id="@+id/content_Cube_WebView" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_information_heading" android:background="@color/white" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/information" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_information" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:id="@+id/rv_information_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="12dp"/>
+                <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                    <TextView android:textColor="@color/black_90_opa" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/billsShop" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/amazon_recharge_layout_rv" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/dashboard_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="@dimen/dimen_5" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/dashboard_ads"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/last_login_detail_ll" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:padding="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_login_time" android:layout_centerInParent="true" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/login_date" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_login_date" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="01/03/2019" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/login_time" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/tv_login_time" android:background="@color/white" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="11:25 AM" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/last_transaction_details"/>
+    <RelativeLayout android:id="@+id/specialtrain_list_rl" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:paddingTop="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spc_train_list" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <androidx.core.widget.NestedScrollView android:background="#efeff4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_specialtrainlist" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

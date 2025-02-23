@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/saved_card_cell" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/saved_card_header_layout" android:paddingLeft="@dimen/size8" android:paddingRight="@dimen/size8" android:layout_width="match_parent" android:layout_height="@dimen/size52">
+        <cris.org.in.ima.mobikwiklayout.view.IconView android:textColor="@color/text_color_dark_gray" android:gravity="right" android:id="@+id/accessory_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_chevron" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <cris.org.in.ima.mobikwiklayout.view.MKTextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/text_color_dark_gray" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/saved_card_number" android:layout_width="match_parent" android:layout_height="match_parent" android:drawablePadding="@dimen/size5" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/sc_cvv_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

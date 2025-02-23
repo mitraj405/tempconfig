@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/card_layout" android:layout_width="match_parent" android:layout_height="match_parent" ads:cardBackgroundColor="@color/light_gray_background" ads:cardCornerRadius="4dp" ads:cardElevation="2dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/main_ll" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/tv_fromStn_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Luckmow Alambgh" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="100dp" android:layout_height="20dp" android:layout_marginTop="4dp" android:src="@drawable/arrow" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/tv_toStn_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Luckmow Alambgh " android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/fev_delete" android:background="@color/white" android:layout_width="50dp" android:layout_height="30dp" android:src="@drawable/ic_delete" android:tint="@color/black_15_opa" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/light_gray_cardview" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Train_NO" android:layout_below="@+id/main_ll" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/dark" android:id="@+id/tv_trainnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12554" android:layout_below="@+id/main_ll" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <View android:background="@color/dark" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="10dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/class_fv" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Exec. Chair Car" android:layout_below="@+id/main_ll" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/select_book_ll" android:background="@color/dark" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_weight="1">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_book" android:textAllCaps="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/bottom_shadow" android:layout_width="match_parent" android:layout_height="10dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

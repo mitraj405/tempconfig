@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_select_pg_method_head" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="@dimen/dimen_10">
+                        <TextView android:textSize="14sp" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/select_payment_method" android:layout_weight="1" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/iPay_payment_head" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/iPay_payment_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/size17" android:text="@string/ipay_payment" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:id="@+id/iPay_payment_arrow" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/iPay_payment_ll" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_ipay" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_ipay" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_ipay" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iPay" android:layout_width="300dp" android:layout_height="50dp" android:src="@drawable/ic_logo_ipay" android:contentDescription="@string/ipay_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                    <RelativeLayout android:id="@+id/other_payment_head" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/other_payment_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/size17" android:text="@string/multiple_payment" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:id="@+id/other_payment_arrow" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/other_payment_ll" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/cv_paytm" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_paytm" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_paytm" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/paytm" android:paddingLeft="-123dp" android:layout_width="350dp" android:layout_height="45dp" android:src="@drawable/ic_paytm_logo" android:contentDescription="@string/paytm_mpp_desc"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/cv_mobimpp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_mobimpp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_mobimpp" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/mobi_mpp" android:paddingLeft="-105dp" android:layout_width="370dp" android:layout_height="45dp" android:src="@drawable/mobikwik_mpp" android:contentDescription="@string/mobi_mpp_desc"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/cv_payu_mpp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_payu_mpp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_payu_mpp" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iv_payu_mpp" android:paddingLeft="-138dp" android:layout_width="370dp" android:layout_height="match_parent" android:src="@drawable/ic_payu_mpp_logo" android:contentDescription="@string/payu_mpp_desc"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <LinearLayout android:gravity="center_vertical" android:id="@+id/cv_razor_pay" android:layout_width="match_parent" android:layout_height="55dp" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_razor_pay" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_razor_pay" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iv_razorpay" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_razorpayicon" android:contentDescription="@string/razorP_mpp_desc"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:gravity="center_vertical" android:id="@+id/cv_phone_pe" android:layout_width="match_parent" android:layout_height="55dp" android:layout_weight="1">
+                            <include android:id="@+id/rl_phonePeOffer" android:visibility="gone" layout="@layout/bg_mpp_offer_layout"/>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/click_phone_pe" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_phone_pe" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iv_phone_pe" android:layout_width="280dp" android:layout_height="48dp" android:src="@drawable/ic_logo_phonepe" android:contentDescription="@string/phonepe_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/cv_icici_mpp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_icici_mpp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_icici_mpp" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iciciMpp" android:paddingLeft="-128dp" android:layout_width="370dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_icici_mpp" android:contentDescription="@string/icici_mpp_desc"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <TextView android:textSize="14dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:id="@+id/tv_icici_mpp_offer" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/offers"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_hdfc_mpp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_hdfc_mpp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_hdfc_mpp" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/hdfcMpp" android:layout_width="300dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_hdfc_mpp" android:contentDescription="@string/hdfc_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_airpay" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_airpay" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_airpay" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/airPay" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_airpay_mpp" android:contentDescription="@string/airpay_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_amex_mpp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_amex_mpp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_amex_mpp" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/amexMpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_amex_mpp" android:contentDescription="@string/amex_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_indusind_mpp" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_indusind_mpp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_indusind_mpp" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/indusindMpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_indusind" android:contentDescription="@string/indusind_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_pay_glocal" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_pay_glocal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_pay_glocal" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/payGlocalMpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_pay_glocal" android:contentDescription="@string/payglocal_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_safex_pay" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_safex_pay" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_safex_pay" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/safexPayMpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_safex_pay" android:contentDescription="@string/safex_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_ease_buzz" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_ease_buzz" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_ease_buzz" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/ease_buzz_mpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_easebuzz" android:contentDescription="@string/easebuzz_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_sbi_epay" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_sbi_epay" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_sbi_epay" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="start" android:id="@+id/sbiePayMpp" android:paddingLeft="10dp" android:layout_width="300dp" android:layout_height="match_parent" android:src="@drawable/sbi_internet_banking_logo" android:contentDescription="@string/sbi_epay_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_cash_free" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_cash_free" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_cash_free" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/cashfreeMpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_cashfree_pay" android:contentDescription="@string/cash_free_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_pay_ten" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_pay_ten" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_pay_ten" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="start" android:id="@+id/pay_ten_mpp" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/irctc_pay_ten_pg" android:contentDescription="@string/payten_mpp_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                        <LinearLayout android:gravity="center_vertical" android:id="@+id/cv_test_bank" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_testbank" android:layout_width="match_parent" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_test_bank" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/test_bank_icon" android:layout_width="280dp" android:layout_height="50dp" android:src="@drawable/ic_logo_test_pg"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+                    <RelativeLayout android:id="@+id/rl_bhim_upi_head" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:contentDescription="@string/bhim_upi_desc">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_bhim_upi_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bhim_upi" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:id="@+id/iv_bhim_upi_arrow" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bhim_upi_section" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_paytm_upi" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_paytm_upi" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_paytm_upi" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iv_paytm_upi" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_paytm_upi" android:contentDescription="@string/paytm_upi_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                        <RelativeLayout android:orientation="horizontal" android:id="@+id/cv_razorpay_upi" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1dp" android:layout_marginRight="3dp" android:layout_marginBottom="1dp">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_razorpay_upi" android:layout_width="wrap_content" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_razorpay_upi" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginStart="15dp" android:buttonTint="@color/red"/>
+                                <ImageView android:layout_gravity="left" android:id="@+id/iv_razorpay_upi" android:layout_width="280dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_razorpay_upi" android:contentDescription="@string/razorpay_upi_desc"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rv_select_wallet" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallets" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:id="@+id/select_wallet_image" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/wallet_list" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/offer_lyt" android:layout_alignParentTop="true">
+                        <LinearLayout android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer1View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer3View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer5View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer7" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer7View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer9" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer10" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer9View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer11" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer12" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer11View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer13" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer14" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer13View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer15" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer16" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer15View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer17" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer18" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                                <View android:id="@+id/walletContainer17View" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer19" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                    <LinearLayout android:orientation="horizontal" android:id="@+id/walletContainer20" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_weight="1"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:id="@+id/loyalty_layout_view" android:background="@color/lightdark" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                    <RelativeLayout android:id="@+id/redeem_loyalty_payment" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_redeem_paymemt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/size17" android:text="@string/redeem_loyalty_points" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true" android:rotation="275"/>
+                    </RelativeLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                    <RelativeLayout android:id="@+id/cod_layout_head" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_later" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:id="@+id/cod_arrow" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/pay_later_ll" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_cash_on_del" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/cv_cash_on" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1">
+                                <LinearLayout android:gravity="center_vertical" android:id="@+id/click_cash_on_del" android:layout_width="300dp" android:layout_height="match_parent">
+                                    <RadioButton android:id="@+id/select_cash_on_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                    <ImageView android:id="@+id/cash_on_del" android:paddingLeft="17dp" android:paddingRight="0dp" android:layout_width="230dp" android:layout_height="match_parent" android:src="@drawable/ic_pay_on_del_logo" android:contentDescription="@string/pod_desc"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+                                    <TextView android:textSize="14dp" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:id="@+id/tv_cash_on_del_offer" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/offers" fontFamily="fonts/Roboto-Regular.ttf"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_epaylater" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1">
+                                <LinearLayout android:gravity="center_vertical" android:id="@+id/click_epaylater" android:layout_width="300dp" android:layout_height="match_parent">
+                                    <RadioButton android:id="@+id/select_epaylater" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                    <ImageView android:id="@+id/iv_epaylater" android:layout_width="230dp" android:layout_height="match_parent" android:src="@drawable/ic_logo_epaylater" android:contentDescription="@string/pod_desc"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_stashfin" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1">
+                                <LinearLayout android:gravity="center_vertical" android:id="@+id/click_stashfin" android:layout_width="300dp" android:layout_height="match_parent">
+                                    <RadioButton android:id="@+id/select_stashfin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                    <ImageView android:id="@+id/iv_stashfin" android:layout_width="230dp" android:layout_height="match_parent" android:src="@drawable/ic_stashfin_img" android:contentDescription="@string/stashfin_desc"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_paytm_paylater" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="1">
+                                <LinearLayout android:gravity="center_vertical" android:id="@+id/click_paytm_paylater" android:layout_width="300dp" android:layout_height="match_parent">
+                                    <RadioButton android:id="@+id/select_paytm_paylater" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                    <ImageView android:id="@+id/iv_paytm_paylater" android:layout_width="230dp" android:layout_height="match_parent" android:src="@drawable/ic_paytm_paylater" android:contentDescription="@string/paytm_paylater_desc"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                    <RelativeLayout android:id="@+id/emi_layout_head" android:background="@color/white" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="13dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_emi" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <ImageView android:id="@+id/emi_arrow" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="16dp" android:layout_height="21dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/emi_ll" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_pine_lab" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="55dp">
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_pine_lab" android:layout_width="300dp" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_pine_lab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                <ImageView android:id="@+id/iv_pine_lab" android:layout_width="@dimen/size180" android:layout_height="match_parent" android:src="@drawable/ic_logo_pine_lab" android:contentDescription="@string/pine_lab_desc"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_bhanix_cashe" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="55dp">
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_bhanix_cashe" android:layout_width="300dp" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_bhanix_cashe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                <ImageView android:id="@+id/iv_bhanix_cashe" android:layout_width="@dimen/size180" android:layout_height="match_parent" android:src="@drawable/ic_logo_cashe" android:contentDescription="@string/pine_lab_desc"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/cv_bajaj_emi" android:background="@color/white" android:padding="5dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="55dp">
+                            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.9dp"/>
+                            <LinearLayout android:gravity="center_vertical" android:id="@+id/click_bajaj_emi" android:layout_width="300dp" android:layout_height="match_parent">
+                                <RadioButton android:id="@+id/select_bajaj_emi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/red"/>
+                                <ImageView android:id="@+id/iv_bajaj_emi" android:layout_width="@dimen/size180" android:layout_height="match_parent" android:src="@drawable/ic_logo_bajaj_emi" android:contentDescription="@string/bajaj_fin_emi"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/accrual_msg_ll" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_accrual_msg" android:background="@color/white" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/accrual_pg_msg" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/make_payment_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/make_payment_bottom"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/ewallet_ll" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_ll">
+        <View android:id="@+id/ewallet_view_blank" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+        <include layout="@layout/payment_irctc_ewallet"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/wallet_details_ll" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_ll">
+        <View android:id="@+id/wallet_view_blank" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+        <include layout="@layout/payment_wallet"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_ll" android:background="@color/bottom_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_txn_charges" android:background="@color/white" android:padding="3dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/txn_charge_msg" android:fontFamily="@font/open_sans" android:drawableTint="@color/white"/>
+        <LinearLayout android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="17dp" android:textColor="@color/white" android:id="@+id/txt_fare_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 1935" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="8dp" android:textColor="@color/white" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹ 1935" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/proceed_to_payment" android:background="@drawable/round_red_fill" android:paddingLeft="25dp" android:paddingTop="7dp" android:paddingRight="25dp" android:paddingBottom="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_now" android:drawableLeft="@drawable/lock" android:drawablePadding="7dp" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

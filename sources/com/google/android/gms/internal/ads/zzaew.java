@@ -1,0 +1,44 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.IOException;
+import java.util.List;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+public final class zzaew implements zzack {
+    private final zzack zza;
+
+    public zzaew() {
+        this(0);
+    }
+
+    public final int zzb(zzacl zzacl, zzadf zzadf) throws IOException {
+        return this.zza.zzb(zzacl, zzadf);
+    }
+
+    public final /* synthetic */ List zzd() {
+        return zzfxr.zzm();
+    }
+
+    public final void zze(zzacn zzacn) {
+        this.zza.zze(zzacn);
+    }
+
+    public final void zzi(long j, long j2) {
+        this.zza.zzi(j, j2);
+    }
+
+    public final boolean zzj(zzacl zzacl) throws IOException {
+        return this.zza.zzj(zzacl);
+    }
+
+    public zzaew(int i) {
+        this.zza = new zzaex();
+    }
+
+    public final /* synthetic */ zzack zzc() {
+        return this;
+    }
+
+    public final void zzf() {
+    }
+}

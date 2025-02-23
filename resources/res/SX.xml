@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/mp_pass_ll" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/Please_Select_Passenger" android:fontFamily="@font/open_sans_semibold" android:textAlignment="textStart"/>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                <LinearLayout android:id="@+id/mp_layout" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.1">
+                        <TextView android:textSize="13sp" android:textColor="@color/dark" android:id="@+id/tv_mp_name_age_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Ravi Sharma 26 Years,Male" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/dark" android:id="@+id/tv_mp_concessionType_cardNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="MPPASS | (88888)" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/dark" android:id="@+id/tv_mp_Card_Expiry_Date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Card Expiry Date | 30-November-2022" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/dark" android:id="@+id/tv_mp_dob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Date of Birth | 15-Feb-1993" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <CheckBox android:id="@+id/mp_checkBox" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginTop="@dimen/dimen_15" android:button="@drawable/irctc_checkbox" android:scaleX="1.5" android:scaleY="1.5"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+                <LinearLayout android:id="@+id/spouse_layout" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.1">
+                        <TextView android:textSize="13sp" android:textColor="@color/dark" android:id="@+id/tv_spouse_name_age_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Ravi Sharma 26 Years,Male" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans_semibold"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/dark" android:id="@+id/tv_spouse_concessionType_cardNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="MPPASS | (88888)" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/dark" android:id="@+id/tv_spouse_Card_Expiry_Date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Card Expiry Date | 30-November-2022" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                        <TextView android:textSize="11sp" android:textColor="@color/dark" android:id="@+id/tv_spouse_dob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:text="Date of Birth | 15-Feb-1993" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                        <CheckBox android:id="@+id/spouse_checkBox" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginTop="@dimen/dimen_15" android:button="@drawable/irctc_checkbox" android:scaleX="1.5" android:scaleY="1.5"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/spouse_viewLine" android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginBottom="70dp">
+                <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/mp_sansademail_msg" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mp_booking_msg" android:layout_weight="1" android:fontFamily="@font/open_sans_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/bottom" android:background="@color/bottom_dark" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/Continue_btn" android:background="@drawable/round_red_fill" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Continue" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

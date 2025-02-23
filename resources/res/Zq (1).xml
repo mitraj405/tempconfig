@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/change" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:id="@+id/tv_ewallet_reg_verification_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ewallet_reg_verification_msg" android:fontFamily="@font/open_sans_semibold"/>
+            <TextView android:textSize="15dp" android:textColor="@color/dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/ewallet_reg_gst_msg" android:fontFamily="@font/open_sans_semibold"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="2">
+                <EditText android:textSize="14dp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/txn_password" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/transaction_password" android:layout_weight="2.5" android:inputType="textPassword" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:id="@+id/tv_txn_password_show" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:contentDescription="show password" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="2">
+                <EditText android:textSize="14dp" android:textColor="@color/dark" android:textColorHint="@color/dark" android:id="@+id/et_txn_confirm_password" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/cnf_transaction_password" android:layout_weight="2.5" android:inputType="textPassword" android:drawableTint="@color/lightdark"/>
+                <TextView android:gravity="left" android:id="@+id/tv_txn_confirm_password_show" android:layout_width="25dp" android:layout_height="wrap_content" android:drawableRight="@drawable/visibility_off" android:contentDescription="show password" android:drawableTint="@color/lightdark"/>
+            </LinearLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="2dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/blue" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/forgot_password1" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

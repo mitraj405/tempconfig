@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="akamaiCCAcolorDialogBackground">#313030</color>
+    <color name="akamaiCCAcolorDialogMessage">#99ffffff</color>
+    <color name="akamaiCCAcolorDialogTitle">#deffffff</color>
+    <color name="akamaiCCAcolorPrimary">#ffffff</color>
+    <color name="akamaiCCAcolorProgressBackground">#424242</color>
+    <color name="iz_chronometer">#99ffffff</color>
+    <color name="iz_notificationBg">#000000</color>
+    <color name="iz_notificationMBg">#ffffff</color>
+    <color name="white">#ffffff</color>
+</resources>

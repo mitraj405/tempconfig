@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/change" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:background="@android:color/darker_gray" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/Read_Carefully" android:contentDescription=" Read Carefully  (In case of any clarity required kindly contact customer care for detail)" android:fontFamily="@font/open_sans"/>
+                <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="left" android:layout_gravity="left" android:background="@android:color/white" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/irctc_agent_msg" android:fontFamily="@font/open_sans" android:layout_marginVertical="10dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="left" android:background="@android:color/white" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_name_enter" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/user_name_tv" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="left" android:background="@android:color/white" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aadhaar_No_Virtual_ID" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/aadhaar_tv" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="left" android:background="@android:color/white" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PAN_Number" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/pan_tv" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="left" android:background="@android:color/white" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/total_Balance" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/balance_tv" android:background="@android:color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/dark" android:id="@+id/tv_login_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Login_Password" android:fontFamily="@font/open_sans"/>
+                <EditText android:textSize="14dp" android:id="@+id/et_login_pass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/Enter_Login_Password" android:inputType="textPassword" android:contentDescription="enter login password" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginVertical="10dp" android:paddingVertical="5dp">
+                <CheckBox android:id="@+id/cb_tnc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/I_have_read_agree" android:contentDescription="I have read and agree to Terms and Conditions"/>
+                <TextView android:textSize="14dp" android:textColor="@color/blue" android:id="@+id/tv_tnc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Terms_and_Conditions" android:fontFamily="@font/open_sans"/>
+            </LinearLayout>
+            <RelativeLayout android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_release_pan_aadhaar" android:background="@drawable/round_red_fill" android:paddingLeft="25dp" android:paddingTop="8dp" android:paddingRight="25dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/release_PAN_AADHAAR" android:layout_centerInParent="true" android:contentDescription="Release pan adhar" android:fontFamily="@font/open_sans_semibold"/>
+            </RelativeLayout>
+            <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/multiple_ad_sizes_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/change" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/lower_bots_chngpass"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

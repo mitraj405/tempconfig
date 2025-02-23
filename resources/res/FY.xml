@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tkt_layout_id" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ticket_info_layout" android:background="@drawable/book_item_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/journey_details_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="10">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PNR_No" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_pnr" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1254213213" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Status_loyalty" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accural_booking" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_station_from" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NDLS" android:drawableRight="@drawable/ic_right_arrow" fontFamily="fonts/Roboto-Medium.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_station_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" PMNE" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Train_No" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_train_no" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12542" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Points" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="102018" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/DOJ" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_journey_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12 May 2018" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Booking_Date_loyalty" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_dobooking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10 may 2018" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/light_gray" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

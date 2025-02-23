@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#edecec" android:layout_width="match_parent" android:layout_height="match_parent" ads:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <TextView android:textColor="@color/red" android:gravity="center" android:layout_gravity="center" android:id="@+id/attention_msg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="300dp" android:text="@string/attention_msg" android:layout_centerInParent="true" android:rotation="-45"/>
+    <View android:id="@+id/horizontal_line" android:background="@color/lighter_grey" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab_dashboard" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/horizontal_line">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_tab_dashboard">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/train_dashboard_image_layout_rv" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:id="@+id/webView_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+                    <LinearLayout android:background="@drawable/border_shadow" android:layout_width="match_parent" android:layout_height="@dimen/size64" android:layout_marginLeft="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_30" android:layout_marginBottom="@dimen/dimen_10">
+                        <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_information_heading" android:background="@color/white" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/information" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_information" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:id="@+id/rv_information_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="12dp"/>
+                <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/train_dashboard_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginBottom="@dimen/dimen_5" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/train_dashboard_ads"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab_upcoming_journey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/horizontal_line">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_tab_upcoming_journey">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:background="#dbdbdb" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_tab_upcoming_journey_train" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/train" android:layout_weight="6" android:fontFamily="@font/open_sans_extrabold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_tab_upcoming_journey_pnr" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/PNR" android:layout_weight="4" android:fontFamily="@font/open_sans_extrabold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_tab_upcoming_journey_date" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/Date" android:layout_weight="4" android:fontFamily="@font/open_sans_extrabold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_tab_upcoming_journey_from" android:paddingRight="3dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/From" android:layout_weight="2" android:fontFamily="@font/open_sans_extrabold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/tv_tab_upcoming_journey_to" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/To" android:layout_weight="2" android:fontFamily="@font/open_sans_extrabold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/tv_tab_upcoming_journey_class" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Class" android:layout_weight="2" android:fontFamily="@font/open_sans_extrabold"/>
+                </LinearLayout>
+                <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab_upcoming_journey_content" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_no_upcomingjourney" android:background="@color/white" android:paddingTop="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/nO_uPCOMING_JOURNEYS" android:textAllCaps="true" android:fontFamily="@font/open_sans_semibold"/>
+                        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rv_tab_upcoming_journey_items" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab_last_txn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/horizontal_line">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_lasttxn" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/darkGrey" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_tab_last_txn">
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_nolast_txn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/dark" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_tab_no_lastTxn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/No_last_transactions" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_pnr" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_pnr_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PNR" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_pnr_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_txnid" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_txnid_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transaction_ID" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_txnid_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_status" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_status_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Status" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/green" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_status_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_date" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Journey_Date" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_date_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_bookingdate" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_bookingdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Booking_Date" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_bookingdate_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_from" android:background="#f3f3f3" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_from_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/From" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_from_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_to" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_to_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/To" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_to_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_class" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_class_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Class" android:fontFamily="@font/open_sans_bold"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="end" android:layout_gravity="end" android:id="@+id/tv_tab_lasttxn_class_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold" android:textAlignment="viewEnd"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tab_lasttxn_view_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="20dp" android:paddingVertical="15dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/blue" android:layout_gravity="start" android:id="@+id/tv_tab_lasttxn_view_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_Details" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <include layout="@layout/last_transaction_details"/>
+    <RelativeLayout android:id="@+id/specialtrain_list_rl" android:background="@color/TransparentBACKGROUND_COLOR20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/below_popup_white_bg" android:paddingTop="15dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="150dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spc_train_list" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+            </RelativeLayout>
+            <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <androidx.core.widget.NestedScrollView android:background="#efeff4" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_specialtrainlist" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

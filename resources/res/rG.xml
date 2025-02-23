@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/tkt_layout_id" android:background="@color/grey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ticket_info_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/journey_details_layout" android:background="@drawable/book_item_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:weightSum="10">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="10">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AC_No" android:contentDescription="Account Nunber" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_Account_Number" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Balance_Pts" android:contentDescription="Balance Points" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_balance_point" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="10">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Membership" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_member_on" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dd Mon yyyy" fontFamily="fonts/Roboto-Medium.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to" fontFamily="fonts/Roboto-Medium.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_member_valid" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dd Mon yyyy" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/A_C_Status" android:contentDescription="@string/account_status" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_Account_status" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Travel_Pts" android:contentDescription="Travel Points" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_travel_point" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Partner_Pts" android:contentDescription="Partner Points" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_partner_point" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:weightSum="10">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Purchase_Pts" android:contentDescription="Purchase points" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_purchase_point" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5">
+                        <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Redeem_Pts" android:contentDescription="Redeem points" fontFamily="fonts/Roboto-Regular.ttf"/>
+                        <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_redeem_point" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp">
+                    <TextView android:textSize="14dp" android:textColor="@color/black_70_opa" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Card_Type" android:contentDescription="Account Status" fontFamily="fonts/Roboto-Regular.ttf"/>
+                    <TextView android:textSize="15dp" android:textColor="@android:color/black" android:id="@+id/ly_card_type" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" fontFamily="fonts/Roboto-Medium.ttf"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/transaction_type_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <RelativeLayout android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="@color/dark" android:entries="@array/class_type" android:id="@+id/ly_transaction_type" android:background="@color/white" android:padding="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:text="@string/loyalty_Account_Detail"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/gst_detail_arrow" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:src="@drawable/spinner_downwards" android:tint="@color/blue" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/tv_no_record_found" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="15dp" android:text="@string/No_Record_Found"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ly_scroll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_below="@+id/ll_loyality_profile">
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/ly_recycle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

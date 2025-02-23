@@ -1,0 +1,80 @@
+package org.spongycastle.asn1.ua;
+
+import org.spongycastle.asn1.ASN1ObjectIdentifier;
+
+public interface UAObjectIdentifiers {
+    public static final ASN1ObjectIdentifier A;
+    public static final ASN1ObjectIdentifier B;
+    public static final ASN1ObjectIdentifier C;
+    public static final ASN1ObjectIdentifier D;
+    public static final ASN1ObjectIdentifier E;
+    public static final ASN1ObjectIdentifier F;
+    public static final ASN1ObjectIdentifier a;
+    public static final ASN1ObjectIdentifier b;
+    public static final ASN1ObjectIdentifier c;
+    public static final ASN1ObjectIdentifier d;
+    public static final ASN1ObjectIdentifier e;
+    public static final ASN1ObjectIdentifier f;
+    public static final ASN1ObjectIdentifier g;
+    public static final ASN1ObjectIdentifier h;
+    public static final ASN1ObjectIdentifier i;
+    public static final ASN1ObjectIdentifier j;
+    public static final ASN1ObjectIdentifier k;
+    public static final ASN1ObjectIdentifier l;
+    public static final ASN1ObjectIdentifier m;
+    public static final ASN1ObjectIdentifier n;
+    public static final ASN1ObjectIdentifier o;
+    public static final ASN1ObjectIdentifier p;
+    public static final ASN1ObjectIdentifier q;
+    public static final ASN1ObjectIdentifier r;
+    public static final ASN1ObjectIdentifier s;
+    public static final ASN1ObjectIdentifier t;
+    public static final ASN1ObjectIdentifier u;
+    public static final ASN1ObjectIdentifier v;
+    public static final ASN1ObjectIdentifier w;
+    public static final ASN1ObjectIdentifier x;
+    public static final ASN1ObjectIdentifier y;
+    public static final ASN1ObjectIdentifier z;
+
+    static {
+        ASN1ObjectIdentifier aSN1ObjectIdentifier = new ASN1ObjectIdentifier("1.2.804.2.1.1.1");
+        a = new ASN1ObjectIdentifier("1.3.1.1", aSN1ObjectIdentifier);
+        b = new ASN1ObjectIdentifier("1.3.1.1.1.1", aSN1ObjectIdentifier);
+        c = new ASN1ObjectIdentifier("1.2.2.1", aSN1ObjectIdentifier);
+        d = new ASN1ObjectIdentifier("1.2.2.2", aSN1ObjectIdentifier);
+        e = new ASN1ObjectIdentifier("1.2.2.3", aSN1ObjectIdentifier);
+        f = new ASN1ObjectIdentifier("1.2.2.4", aSN1ObjectIdentifier);
+        g = new ASN1ObjectIdentifier("1.2.2.5", aSN1ObjectIdentifier);
+        h = new ASN1ObjectIdentifier("1.2.2.6", aSN1ObjectIdentifier);
+        i = new ASN1ObjectIdentifier("1.1.3.1.1", aSN1ObjectIdentifier);
+        j = new ASN1ObjectIdentifier("1.1.3.1.2", aSN1ObjectIdentifier);
+        k = new ASN1ObjectIdentifier("1.1.3.1.3", aSN1ObjectIdentifier);
+        l = new ASN1ObjectIdentifier("1.1.3.2.1", aSN1ObjectIdentifier);
+        m = new ASN1ObjectIdentifier("1.1.3.2.2", aSN1ObjectIdentifier);
+        n = new ASN1ObjectIdentifier("1.1.3.2.3", aSN1ObjectIdentifier);
+        o = new ASN1ObjectIdentifier("1.1.3.3.1", aSN1ObjectIdentifier);
+        p = new ASN1ObjectIdentifier("1.1.3.3.2", aSN1ObjectIdentifier);
+        q = new ASN1ObjectIdentifier("1.1.3.3.3", aSN1ObjectIdentifier);
+        aSN1ObjectIdentifier.q("1.1.3.4.1");
+        aSN1ObjectIdentifier.q("1.1.3.4.2");
+        aSN1ObjectIdentifier.q("1.1.3.4.3");
+        r = new ASN1ObjectIdentifier("1.1.3.5.1", aSN1ObjectIdentifier);
+        s = new ASN1ObjectIdentifier("1.1.3.5.2", aSN1ObjectIdentifier);
+        t = new ASN1ObjectIdentifier("1.1.3.5.3", aSN1ObjectIdentifier);
+        u = new ASN1ObjectIdentifier("1.1.3.6.1", aSN1ObjectIdentifier);
+        v = new ASN1ObjectIdentifier("1.1.3.6.2", aSN1ObjectIdentifier);
+        w = new ASN1ObjectIdentifier("1.1.3.6.3", aSN1ObjectIdentifier);
+        x = new ASN1ObjectIdentifier("1.1.3.7.1", aSN1ObjectIdentifier);
+        y = new ASN1ObjectIdentifier("1.1.3.7.2", aSN1ObjectIdentifier);
+        z = new ASN1ObjectIdentifier("1.1.3.7.3", aSN1ObjectIdentifier);
+        A = new ASN1ObjectIdentifier("1.1.3.8.1", aSN1ObjectIdentifier);
+        B = new ASN1ObjectIdentifier("1.1.3.8.2", aSN1ObjectIdentifier);
+        C = new ASN1ObjectIdentifier("1.1.3.8.3", aSN1ObjectIdentifier);
+        aSN1ObjectIdentifier.q("1.1.3.9.1");
+        aSN1ObjectIdentifier.q("1.1.3.9.2");
+        aSN1ObjectIdentifier.q("1.1.3.9.3");
+        D = new ASN1ObjectIdentifier("1.1.3.10.1", aSN1ObjectIdentifier);
+        E = new ASN1ObjectIdentifier("1.1.3.10.2", aSN1ObjectIdentifier);
+        F = new ASN1ObjectIdentifier("1.1.3.10.3", aSN1ObjectIdentifier);
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/light_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:weightSum="2">
+                    <TextView android:textSize="15dp" android:textColor="@color/dark" android:background="@null" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/purchase_loyalty_point_confirm_h1" android:layout_weight="1.5" android:fontFamily="@font/open_sans" android:drawableTint="@color/lightdark"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                    <TextView android:textSize="15dp" android:textColor="@color/dark" android:background="@null" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchase_loyalty_point_confirm_h2" android:drawableTint="@color/lightdark"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/tv_txn_id" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="000000000000" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <View android:background="@color/dark" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                    <TextView android:textSize="15dp" android:textColor="@color/dark" android:background="@null" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchase_loyalty_point_confirm_h3" android:drawableTint="@color/lightdark"/>
+                    <TextView android:textSize="15dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="left" android:id="@+id/tv_total_purchase_point" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+                <View android:background="@color/dark" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                    <TextView android:textSize="15dp" android:textColor="@color/dark" android:background="@null" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/purchase_loyalty_point_confirm_h4" android:drawableTint="@color/lightdark"/>
+                    <TextView android:textSize="15dp" android:textColor="@color/dark" android:gravity="left" android:id="@+id/tv_total_amount" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:fontFamily="@font/open_sans_bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:id="@+id/bottom" android:background="@color/bottom_dark" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_ok" android:background="@drawable/round_red_fill" android:paddingLeft="35dp" android:paddingRight="35dp" android:layout_width="wrap_content" android:layout_height="30dp" android:text="Done" android:layout_centerInParent="true" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

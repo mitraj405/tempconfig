@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="7dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_from_station_delhi_metro" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/From" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/dark" android:textColorHint="@color/dark" android:gravity="center" android:id="@+id/dmrc_fromStn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/station_Name" android:textAllCaps="false" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/dmrc_fromStn_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_semibold"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dmrc_stn_rotation" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.3">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/tofrom" android:contentDescription="swap stations"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_to_station_layout_dmrc" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/To" android:fontFamily="@font/open_sans"/>
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/dark" android:textColorHint="@color/dark" android:gravity="center" android:id="@+id/dmrc_toStn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/station_Name" android:textAllCaps="false" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:id="@+id/dmrc_toStn_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70dp">
+                <LinearLayout android:gravity="end" android:orientation="vertical" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="6dp" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/_dmrc_select_journey_date" android:padding="@dimen/size6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="11dp" android:textColor="@color/dark" android:id="@+id/delhi_metro_journey_date_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/departure_date" android:fontFamily="@font/open_sans"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="bottom" android:id="@+id/delhi_metro_cal" android:layout_width="19dp" android:layout_height="13dp" android:layout_marginRight="5dp" android:layout_marginBottom="1dp" android:src="@drawable/calendar" ads:tint="@color/colorAccent"/>
+                            <TextView android:textSize="12dp" android:textColor="@color/dark" android:id="@+id/delhi_metro_journey_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="6dp" android:layout_weight="0.88">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49dp" android:layout_marginLeft="10dp">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/dmrc_tomorrow_ll" android:paddingLeft="5dp" android:paddingTop="4dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/dmrctomorrow_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                            <TextView android:textSize="10dp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/dmrctomorrow_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="wednesday" android:lineSpacingMultiplier="0.7" android:fontFamily="@font/open_sans"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View android:background="#efeff4" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2">
+                    <ImageView android:gravity="center" android:id="@+id/iv_dmrc_min" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginRight="5dp" android:src="@drawable/minus" android:layout_weight="0.2"/>
+                    <TextView android:textSize="12dp" android:gravity="center" android:id="@+id/no_of_passenger" android:background="@drawable/round_light_corner" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/No_of_passengers" android:layout_weight="0.8" android:inputType="number" android:backgroundTint="@color/light_gray"/>
+                    <ImageView android:gravity="center" android:id="@+id/iv_dmrc_plus" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/plus" android:layout_weight="0.2"/>
+                </LinearLayout>
+                <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:layout_gravity="center" android:paddingLeft="25dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/height_for_no_of_passenger" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="14dp" android:textColor="@color/black_80_opa" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="Linked PNR :" android:fontFamily="@font/open_sans_bold"/>
+                <TextView android:textSize="14dp" android:textColor="@color/black_80_opa" android:id="@+id/linked_pnr_number" android:paddingLeft="6dp" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80dp" android:text="" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_dmrc_search" android:background="@drawable/round_red_fill" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp" android:layout_marginRight="30dp" android:layout_marginBottom="15dp" android:text="@string/review_metro_details" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/black_80_opa" android:id="@+id/tv_searchk" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/note_mess" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/blue" android:id="@+id/dmrc_train_timing_link" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/link_for_details_of_delhi_metro_train_timings" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/blue" android:id="@+id/dmrc_train_rout_link" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/link_for_details_of_delhi_metro_route_map" android:fontFamily="@font/open_sans_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

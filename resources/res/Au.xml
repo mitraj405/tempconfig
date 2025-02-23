@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="5dp">
+            <cris.org.in.ima.utils.StatusBarView android:background="@drawable/btn_gradient" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:background="@color/lightgreytxt" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:id="@+id/tv_psgn_detail_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/item_basic_booking_info_new"/>
+                </LinearLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/refund_amount_rl" android:background="@color/white" android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/refund_amount_lbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund_amount" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000" android:layout_toRightOf="@+id/refund_amount_lbl" android:fontFamily="@font/open_sans" android:paddingStart="3dp"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/travel_insurance_rl" android:background="@color/white" android:paddingLeft="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/ti_refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TI_refund_amount" android:fontFamily="@font/open_sans_semibold"/>
+                    <TextView android:textSize="13dp" android:textColor="@color/dark" android:id="@+id/tv_it_refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000" android:layout_toRightOf="@+id/ti_refund_amount" android:fontFamily="@font/open_sans" android:paddingStart="3dp"/>
+                </RelativeLayout>
+                <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <RelativeLayout android:orientation="vertical" android:background="#efeff4" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/psgn_list" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/metro_ticket" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/psgn_list">
+                        <View android:background="@color/lightdark" android:layout_width="match_parent" android:layout_height="1dp"/>
+                        <LinearLayout android:orientation="vertical" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delhi_metro_tct" android:fontFamily="@font/open_sans_bold"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/fromcdmrcstn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold"/>
+                                    </LinearLayout>
+                                    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                        <TextView android:textSize="11dp" android:textStyle="bold" android:textColor="@color/dark" android:gravity="right" android:id="@+id/todmrcstn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/open_sans_bold"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:weightSum="2">
+                                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                        <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Linked PNR : " android:fontFamily="@font/open_sans_bold"/>
+                                        <TextView android:textSize="12dp" android:textColor="@color/red" android:id="@+id/linked_pnr" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_bold"/>
+                                    </LinearLayout>
+                                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="start" android:id="@+id/dmrc_Jdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans"/>
+                                </LinearLayout>
+                                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/no_of_psgn" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@font/open_sans"/>
+                                    <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="right" android:id="@+id/no_of_can_psgn" android:layout_width="wrap_content" android:layout_height="match_parent" android:fontFamily="@font/open_sans"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                            <TextView android:textSize="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancellation_status" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/dmrc_cancel_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/initiated_to_dmrc" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                            <TextView android:textSize="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/booking_amount" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/booking_amnt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Rs. 60" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                            <TextView android:textSize="13dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refund_amount" android:fontFamily="@font/open_sans_semibold"/>
+                            <TextView android:textSize="13dp" android:textStyle="bold" android:textColor="@color/dark" android:id="@+id/refund_amnt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="Rs. 60" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                            <TextView android:textSize="12dp" android:textColor="@color/red" android:id="@+id/refund_subject" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/open_sans_semibold"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.google.android.gms.ads.admanager.AdManagerAdView android:layout_gravity="center" android:id="@+id/camcel_tkt_status_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/metro_ticket" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSizes="MEDIUM_RECTANGLE,LARGE_BANNER,BANNER" ads:adUnitId="@string/lower_bot_ads_tdr_status"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/feedback_ll" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/dark" android:gravity="center" android:background="@color/white" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="How was your ticket cancellation experience?" android:fontFamily="@font/open_sans_bold"/>
+                    <LinearLayout android:layout_gravity="center_horizontal" android:paddingTop="12dp" android:layout_width="226dp" android:layout_height="39dp">
+                        <ImageView android:id="@+id/star_1" android:tag="0" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" ads:srcCompat="@drawable/star_outline"/>
+                        <ImageView android:id="@+id/star_2" android:tag="1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" ads:srcCompat="@drawable/star_outline"/>
+                        <ImageView android:id="@+id/star_3" android:tag="2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" ads:srcCompat="@drawable/star_outline"/>
+                        <ImageView android:id="@+id/star_4" android:tag="3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" ads:srcCompat="@drawable/star_outline"/>
+                        <ImageView android:id="@+id/star_5" android:tag="4" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" ads:srcCompat="@drawable/star_outline"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>&gt; 
+    </LinearLayout>
+</RelativeLayout>

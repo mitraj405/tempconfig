@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="78dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/size10" android:layout_marginTop="@dimen/size5" android:layout_marginRight="@dimen/size10" android:layout_marginBottom="@dimen/size5">
+            <ImageView android:id="@+id/image_iv" android:layout_width="55dp" android:layout_height="55dp" android:src="@drawable/premium_partner_confirmtkt"/>
+            <TextView android:textSize="12dp" android:textColor="@color/dark" android:gravity="center" android:id="@+id/text_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ConfirmTkt" android:fontFamily="@font/open_sans_semibold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
